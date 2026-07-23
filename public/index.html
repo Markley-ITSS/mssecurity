@@ -1,0 +1,1040 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>document.documentElement.className += ' js';</script>
+<title>MS Security Systems Ltd | Alarm & CCTV Installation — Newcastle, Gateshead & the North East</title>
+<meta name="description" content="Director-led intruder alarm & CCTV installation across Newcastle, Gateshead, Sunderland, Durham & Northumberland. State-of-the-art security systems, tidy installs, full aftercare. Free no-obligation quotes." />
+<meta property="og:title" content="MS Security Systems Ltd — Alarms & CCTV across the North East" />
+<meta property="og:description" content="State-of-the-art alarm & CCTV systems, expertly installed across Tyneside. Free quotes." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="brand_assets/ms_security_logo_mark.png" />
+<link rel="preload" as="font" type="font/woff2" href="brand_assets/fonts/inter-var.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="brand_assets/fonts/space-grotesk-var.woff2" crossorigin />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        navy: { 900:'#00121F', 800:'#001C33', 700:'#002B47', 600:'#003C60', 500:'#00486C' },
+        teal: { 600:'#006C7A', 500:'#007884', 400:'#0CA8B4' },
+        cyan: { 400:'#12BAC6', 300:'#35D0DB' },
+        paper: '#F5F6F4', ink: '#0A1722'
+      },
+      fontFamily: {
+        display: ['"Space Grotesk"','system-ui','sans-serif'],
+        sans: ['Inter','system-ui','sans-serif']
+      },
+      boxShadow: {
+        glow: '0 0 0 1px rgba(18,186,198,.25), 0 18px 50px -12px rgba(0,120,132,.55)',
+        card: '0 1px 2px rgba(0,28,51,.06), 0 18px 40px -20px rgba(0,60,96,.35)'
+      }
+    }
+  }
+}
+</script>
+<style>
+  /* self-hosted fonts (SIL OFL) — served from our own domain, not a font CDN */
+  @font-face{ font-family:'Space Grotesk'; font-style:normal; font-weight:400 700; font-display:swap; src:url('brand_assets/fonts/space-grotesk-var.woff2') format('woff2'); }
+  @font-face{ font-family:'Inter'; font-style:normal; font-weight:400 700; font-display:swap; src:url('brand_assets/fonts/inter-var.woff2') format('woff2'); }
+  :root{ --ease:cubic-bezier(.16,1,.3,1); }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:Inter,system-ui,sans-serif; color:#0A1722; background:#F5F6F4; -webkit-font-smoothing:antialiased; }
+  h1,h2,h3,.font-display{ font-family:"Space Grotesk",system-ui,sans-serif; }
+  .tighten{ letter-spacing:-0.03em; }
+  .lead{ line-height:1.7; }
+
+  /* Grain / noise overlay */
+  .grain::before{
+    content:""; position:absolute; inset:0; pointer-events:none; opacity:.5; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+  }
+
+  /* Animated brand gradient blobs */
+  .blob{ position:absolute; border-radius:50%; filter:blur(60px); opacity:.55; will-change:transform; }
+  @keyframes drift{ 0%,100%{ transform:translate3d(0,0,0) scale(1);} 50%{ transform:translate3d(30px,-24px,0) scale(1.12);} }
+  .drift{ animation:drift 14s var(--ease) infinite; }
+  .drift2{ animation:drift 18s var(--ease) infinite reverse; }
+
+  /* Conic sheen behind hero shield */
+  @keyframes spin{ to{ transform:rotate(360deg);} }
+  .sheen{ animation:spin 22s linear infinite; }
+
+  /* Live pulse dot */
+  @keyframes pulse{ 0%{ box-shadow:0 0 0 0 rgba(53,208,219,.7);} 70%{ box-shadow:0 0 0 12px rgba(53,208,219,0);} 100%{ box-shadow:0 0 0 0 rgba(53,208,219,0);} }
+  .pulse{ animation:pulse 2.2s infinite; }
+
+  /* Scanline over CCTV monitors */
+  @keyframes scan{ 0%{ transform:translateY(-100%);} 100%{ transform:translateY(400%);} }
+  .scanline{ position:absolute; left:0; right:0; height:26%; background:linear-gradient(180deg,transparent,rgba(53,208,219,.16),transparent); animation:scan 4.5s linear infinite; }
+
+  /* Reveal on scroll — only hidden when JS is active (progressive enhancement) */
+  .js .reveal{ opacity:0; transform:translateY(22px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
+  .js .reveal.in{ opacity:1; transform:none; }
+
+  /* Gradient text */
+  .grad-text{ background:linear-gradient(100deg,#35D0DB,#0CA8B4 40%,#12BAC6); -webkit-background-clip:text; background-clip:text; color:transparent; }
+
+  /* Marquee */
+  @keyframes marquee{ from{ transform:translateX(0);} to{ transform:translateX(-50%);} }
+  .marquee{ animation:marquee 28s linear infinite; }
+  .marquee-wrap:hover .marquee{ animation-play-state:paused; }
+
+  /* Underline sweep on nav */
+  .navlink{ position:relative; }
+  .navlink::after{ content:""; position:absolute; left:0; bottom:-4px; height:2px; width:0; background:#35D0DB; transition:width .3s var(--ease); }
+  .navlink:hover::after,.navlink:focus-visible::after{ width:100%; }
+
+  .btn{ transition:transform .25s var(--ease), box-shadow .25s var(--ease), background-color .25s var(--ease); }
+  .btn:hover{ transform:translateY(-2px); }
+  .btn:active{ transform:translateY(0); }
+  .card-lift{ transition:transform .35s var(--ease), box-shadow .35s var(--ease); }
+  .card-lift:hover{ transform:translateY(-6px); box-shadow:0 30px 60px -24px rgba(0,60,96,.5); }
+
+  /* Gallery */
+  .shot img{ transition:transform .6s var(--ease); }
+  .shot:hover img{ transform:scale(1.08); }
+
+  /* Review cards — clickable platform header with popout */
+  .rev-card{ transition:transform .3s var(--ease), box-shadow .3s var(--ease); }
+  .rev-card:has(.rev-head:hover){ transform:translateY(-6px); box-shadow:0 26px 55px -22px rgba(0,60,96,.5); }
+  .rev-head{ transition:background-color .25s var(--ease); }
+  .rev-head:hover{ background-color:#EEF1F0; }
+  .rev-arrow{ opacity:0; transform:translateX(-5px); transition:opacity .25s var(--ease), transform .25s var(--ease); }
+  .rev-head:hover .rev-arrow{ opacity:1; transform:none; }
+
+  /* Hero slideshow */
+  .hero-slide{ position:absolute; inset:0; opacity:0; transition:opacity .8s var(--ease); }
+  .hero-slide.is-active{ opacity:1; }
+  .hero-slide > img{ width:100%; height:100%; object-fit:cover; }
+  .hero-dot{ width:7px; height:7px; border-radius:9999px; background:rgba(255,255,255,.4); transition:background-color .3s var(--ease), width .3s var(--ease); }
+  .hero-dot[aria-current="true"]{ background:#35D0DB; width:18px; }
+
+  /* Day/night comparison slider */
+  .cmp{ position:relative; overflow:hidden; border-radius:1rem; --pos:50%; touch-action:none; cursor:ew-resize; background:#000; }
+  .cmp img{ display:block; width:100%; height:auto; user-select:none; -webkit-user-drag:none; }
+  .cmp .cmp-top{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; clip-path:inset(0 calc(100% - var(--pos)) 0 0); }
+  .cmp-handle{ position:absolute; top:0; bottom:0; left:var(--pos); width:2px; margin-left:-1px; background:rgba(255,255,255,.9); border:0; padding:0; cursor:ew-resize; z-index:4; }
+  .cmp-handle::before{ content:""; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:44px; height:44px; border-radius:9999px; background:#fff; box-shadow:0 4px 14px rgba(0,0,0,.45); }
+  .cmp-handle svg{ position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:#003C60; z-index:1; }
+  .cmp-tag{ position:absolute; bottom:.75rem; z-index:3; pointer-events:none; font-size:11px; font-weight:600; color:#fff; background:rgba(0,18,31,.6); padding:.25rem .6rem; border-radius:9999px; }
+  .cmp-tag-l{ left:.75rem; } .cmp-tag-r{ right:.75rem; }
+
+  :focus-visible{ outline:3px solid #12BAC6; outline-offset:3px; border-radius:6px; }
+
+  /* Album modal */
+  @keyframes fadeIn{ from{ opacity:0 } to{ opacity:1 } }
+  @keyframes popIn{ from{ opacity:0; transform:translateY(12px) scale(.985) } to{ opacity:1; transform:none } }
+  #album:not(.hidden){ animation:fadeIn .22s var(--ease); }
+  #album:not(.hidden) .album-panel{ animation:popIn .3s var(--ease); }
+  #lightbox:not(.hidden){ animation:fadeIn .2s var(--ease); }
+  .album-tab{ padding:.5rem 1.1rem; border-radius:9999px; font-size:.875rem; font-weight:600; color:#334155; background:#fff; border:1px solid rgba(0,28,51,.12); white-space:nowrap; transition:color .2s var(--ease), background-color .2s var(--ease), border-color .2s var(--ease); cursor:pointer; }
+  .album-tab:hover{ border-color:#007884; color:#007884; }
+  .album-tab[aria-pressed="true"]{ background:#003C60; color:#fff; border-color:#003C60; }
+  .album-item{ cursor:pointer; }
+
+  /* nav dropdowns (disclosure pattern: hover for mouse, click/keyboard for the rest) */
+  .nav-group{ position:relative; }
+  .navtrigger{ display:inline-flex; align-items:center; gap:.28rem; cursor:pointer; background:none; border:0; padding:0; font:inherit; color:inherit; }
+  .navtrigger .chev{ transition:transform .25s var(--ease); }
+  .nav-group:hover .navtrigger .chev, .nav-group.open .navtrigger .chev{ transform:rotate(180deg); }
+  .dropmenu{ position:absolute; top:calc(100% + 12px); left:0; min-width:210px; background:#fff; border:1px solid rgba(0,28,51,.08); border-radius:14px; box-shadow:0 1px 2px rgba(0,28,51,.06), 0 18px 40px -20px rgba(0,60,96,.35); padding:.4rem; opacity:0; visibility:hidden; transform:translateY(6px); transition:opacity .2s var(--ease), transform .2s var(--ease), visibility .2s; z-index:60; }
+  .dropmenu::before{ content:""; position:absolute; left:0; right:0; top:-12px; height:12px; } /* hover bridge across the gap */
+  .nav-group:hover .dropmenu, .nav-group.open .dropmenu{ opacity:1; visibility:visible; transform:translateY(0); }
+  .dropmenu a{ display:block; padding:.55rem .8rem; border-radius:9px; font-size:.9rem; font-weight:500; color:#002B47; white-space:nowrap; }
+  .dropmenu a:hover, .dropmenu a:focus-visible{ background:#F5F6F4; color:#007884; }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation:none !important; scroll-behavior:auto !important; }
+    .js .reveal, .reveal{ opacity:1 !important; transform:none !important; transition:none !important; }
+    .hero-slide{ transition:none !important; }
+  }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- ===== TOP BAR ===== -->
+<div class="bg-navy-900 text-white/80 text-[13px]">
+  <div class="mx-auto max-w-7xl px-4 h-10 flex items-center justify-between">
+    <p class="hidden sm:flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-cyan-300 pulse"></span> Covering Tyne and Wear, Northumberland and County Durham</p>
+    <div class="flex items-center gap-4">
+      <a href="tel:+447773822192" class="inline-flex items-center gap-1.5 hover:text-cyan-300 transition-colors"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>07773 822192</a>
+      <a href="https://wa.me/447773822192" class="hidden sm:inline hover:text-cyan-300 transition-colors">WhatsApp</a>
+      <a href="mailto:steve@mssecurity.uk" class="hidden md:inline hover:text-cyan-300 transition-colors">steve@mssecurity.uk</a>
+    </div>
+  </div>
+</div>
+<!-- ===== NAV ===== -->
+<header id="nav" class="sticky top-0 z-50 transition-all duration-300 bg-white/85 backdrop-blur-lg border-b border-navy-900/10">
+  <div class="mx-auto max-w-7xl px-4 h-[72px] flex items-center justify-between gap-3">
+    <a href="index.html" class="flex items-center gap-2.5 shrink-0">
+      <img src="brand_assets/ms_security_logo_mark.png" alt="MS Security Systems logo" class="h-10 w-auto" />
+      <span class="font-display font-bold leading-none">
+        <span class="block text-navy-700 text-[14px] sm:text-[16px] tracking-tight">MS Security Systems</span>
+        <span class="block text-teal-500 text-[9px] sm:text-[10px] font-semibold tracking-[0.28em] mt-1">LIMITED</span>
+      </span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-x-6 text-[14px] font-medium text-navy-700">
+      <div class="nav-group">
+        <button type="button" class="navtrigger hover:text-teal-500 transition-colors" aria-expanded="false" aria-controls="about-menu">About
+          <svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div id="about-menu" class="dropmenu">
+          <a href="our-story.html">About Us</a>
+          <a href="#why">Why Choose Us</a>
+          <a href="community.html">Community</a>
+        </div>
+      </div>
+      <a href="#services" class="navlink hover:text-teal-500 transition-colors">Services</a>
+      <div class="nav-group">
+        <button type="button" class="navtrigger hover:text-teal-500 transition-colors" aria-expanded="false" aria-controls="work-menu">Our Work
+          <svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div id="work-menu" class="dropmenu">
+          <a href="#gallery">Recent Work</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#footage">Quality Systems</a>
+        </div>
+      </div>
+      <a href="security-awareness.html" class="navlink hover:text-teal-500 transition-colors">Awareness</a>
+      <a href="#quote" class="navlink hover:text-teal-500 transition-colors">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="#quote" class="btn hidden sm:inline-flex items-center gap-2 rounded-full bg-navy-600 text-white px-5 py-2.5 text-sm font-semibold shadow-glow hover:bg-navy-700">Free quote</a>
+      <button id="burger" aria-label="Open menu" class="lg:hidden p-2 text-navy-700"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <div id="mobile" class="lg:hidden hidden border-t border-navy-900/10 bg-white">
+    <nav class="px-4 py-3 flex flex-col text-navy-700 font-medium">
+      <a href="our-story.html" class="py-2.5 border-b border-navy-900/5">About Us</a>
+      <a href="#why" class="py-2.5 border-b border-navy-900/5">Why Choose Us</a>
+      <a href="community.html" class="py-2.5 border-b border-navy-900/5">Community</a>
+      <a href="#services" class="py-2.5 border-b border-navy-900/5">Services</a>
+      <a href="#gallery" class="py-2.5 border-b border-navy-900/5">Recent Work</a>
+      <a href="#reviews" class="py-2.5 border-b border-navy-900/5">Reviews</a>
+      <a href="#footage" class="py-2.5 border-b border-navy-900/5">Quality Systems</a>
+      <a href="security-awareness.html" class="py-2.5 border-b border-navy-900/5">Security Awareness</a>
+      <a href="#quote" class="mt-3 mb-1 text-center rounded-full bg-navy-600 text-white px-5 py-3 font-semibold">Contact / Free quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===== HERO ===== -->
+<section class="relative overflow-hidden bg-navy-900 text-white grain">
+  <!-- gradient field -->
+  <div class="absolute inset-0">
+    <div class="blob drift" style="width:520px;height:520px;left:-120px;top:-140px;background:radial-gradient(circle,#007884,transparent 65%)"></div>
+    <div class="blob drift2" style="width:600px;height:600px;right:-160px;top:-60px;background:radial-gradient(circle,#0CA8B4,transparent 62%)"></div>
+    <div class="blob drift" style="width:460px;height:460px;left:35%;bottom:-220px;background:radial-gradient(circle,#003C60,transparent 60%)"></div>
+  </div>
+  <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(0,18,31,.2),rgba(0,18,31,.85))"></div>
+
+  <div class="relative mx-auto max-w-7xl px-4 pt-16 pb-20 lg:pt-24 lg:pb-28 grid lg:grid-cols-[1.05fr_.95fr] gap-12 items-center">
+    <div>
+      <span class="inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-1.5 text-[13px] font-medium text-cyan-300 backdrop-blur">
+        <span class="w-2 h-2 rounded-full bg-cyan-300 pulse"></span>
+        Protecting homes and businesses across the North East
+      </span>
+      <h1 class="mt-6 text-4xl sm:text-5xl lg:text-[3.6rem] leading-[1.04] font-bold tighten">
+        Protect what matters with <span class="grad-text">alarms and CCTV</span> installed properly.
+      </h1>
+      <p class="mt-5 max-w-xl text-lg text-white/80 lead">
+        We install reliable, state-of-the-art security systems from leading manufacturers, including Hikvision, Pyronix, Ajax and HKC.
+        Covering Newcastle, Gateshead, Sunderland, Durham, Northumberland and beyond, we provide tidy installations, crystal-clear CCTV footage,
+        reliable alarm protection and dependable aftercare from a local company that actually answers the phone.
+      </p>
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <a href="#quote" class="btn inline-flex items-center gap-2 rounded-full bg-cyan-400 text-navy-900 px-7 py-3.5 font-semibold shadow-glow hover:bg-cyan-300">
+          Get my free quote →
+        </a>
+        <a href="https://wa.me/447773822192" class="btn inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-7 py-3.5 font-semibold text-white hover:bg-white/10 backdrop-blur">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Message on WhatsApp
+        </a>
+      </div>
+      <!-- trust row -->
+      <div class="mt-10 flex flex-wrap items-center gap-x-7 gap-y-3 text-sm text-white/70">
+        <div class="flex items-center gap-2"><svg aria-hidden="true" class="text-cyan-300" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01Z"/></svg><b class="text-white">9.33/10</b> Checkatrade</div>
+        <div class="flex items-center gap-2"><svg aria-hidden="true" class="text-cyan-300" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg><b class="text-white">100%</b> recommended on Facebook</div>
+        <div class="flex items-center gap-2"><svg aria-hidden="true" class="text-cyan-300" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Free security survey · Honest advice · No obligation</div>
+      </div>
+    </div>
+
+    <!-- hero visual: camera monitor card -->
+    <div class="relative reveal">
+      <div class="absolute -inset-6 -z-10 opacity-70">
+        <div class="sheen w-full h-full" style="background:conic-gradient(from 0deg,#007884,#0CA8B4,#12BAC6,#003C60,#007884);filter:blur(46px);border-radius:32px"></div>
+      </div>
+      <div class="rounded-3xl border border-white/10 bg-navy-800/70 backdrop-blur-xl p-3 shadow-2xl">
+        <div class="relative overflow-hidden rounded-2xl bg-navy-900 aspect-video">
+          <video id="heroVid" class="w-full h-full object-cover" src="brand_assets/ms-security-logo.mp4" autoplay muted loop playsinline preload="auto" aria-label="MS Security Systems brand animation"></video>
+          <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-2xl pointer-events-none"></div>
+          <button id="vidToggle" aria-label="Pause animation" class="btn absolute bottom-3 right-3 w-8 h-8 grid place-items-center rounded-full bg-black/35 hover:bg-black/55 text-white backdrop-blur">
+            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="mt-3 flex items-center gap-3 text-xs text-white/60">
+        <span class="inline-block w-2 h-2 rounded-full bg-cyan-300 pulse"></span>
+        Local expertise · Genuine equipment · Professional installation
+      </div>
+    </div>
+  </div>
+
+  <!-- brand marquee -->
+  <div class="relative border-t border-white/10 bg-navy-900/60 marquee-wrap overflow-hidden">
+    <div class="flex whitespace-nowrap marquee py-5">
+      <div class="flex shrink-0 items-center gap-8 sm:gap-11 px-4 sm:px-[1.375rem]">
+        <span class="shrink-0 rounded-lg bg-white px-4 py-2.5 grid place-items-center"><img src="brand_assets/logos/hikvision.png" alt="Hikvision" class="h-5 w-auto" /></span>
+        <span class="shrink-0 rounded-lg bg-white px-4 py-2 grid place-items-center"><img src="brand_assets/logos/pyronix.png" alt="Pyronix" class="h-7 w-auto" /></span>
+        <span class="shrink-0 rounded-lg bg-white px-4 py-3 grid place-items-center"><img src="brand_assets/logos/ajax.svg" alt="Ajax" class="h-4 w-auto" /></span>
+        <span class="shrink-0 rounded-lg bg-white px-4 py-1.5 grid place-items-center"><img src="brand_assets/logos/hkc.png" alt="HKC" class="h-9 w-auto" /></span>
+        <span class="shrink-0 rounded-lg bg-white px-4 py-2.5 grid place-items-center"><img src="brand_assets/logos/hikvision.png" alt="Hikvision" class="h-5 w-auto" /></span>
+        <span class="shrink-0 rounded-lg bg-white px-4 py-2 grid place-items-center"><img src="brand_assets/logos/pyronix.png" alt="Pyronix" class="h-7 w-auto" /></span>
+        <span class="shrink-0 rounded-lg bg-white px-4 py-3 grid place-items-center"><img src="brand_assets/logos/ajax.svg" alt="Ajax" class="h-4 w-auto" /></span>
+        <span class="shrink-0 rounded-lg bg-white px-4 py-1.5 grid place-items-center"><img src="brand_assets/logos/hkc.png" alt="HKC" class="h-9 w-auto" /></span>
+      </div>
+      <div class="flex shrink-0 items-center gap-8 sm:gap-11 px-4 sm:px-[1.375rem]" aria-hidden="true">
+        <span class="shrink-0 rounded-lg bg-white px-4 py-2.5 grid place-items-center"><img src="brand_assets/logos/hikvision.png" alt="" class="h-5 w-auto" /></span>
+        <span class="shrink-0 rounded-lg bg-white px-4 py-2 grid place-items-center"><img src="brand_assets/logos/pyronix.png" alt="" class="h-7 w-auto" /></span>
+        <span class="shrink-0 rounded-lg bg-white px-4 py-3 grid place-items-center"><img src="brand_assets/logos/ajax.svg" alt="" class="h-4 w-auto" /></span>
+        <span class="shrink-0 rounded-lg bg-white px-4 py-1.5 grid place-items-center"><img src="brand_assets/logos/hkc.png" alt="" class="h-9 w-auto" /></span>
+        <span class="shrink-0 rounded-lg bg-white px-4 py-2.5 grid place-items-center"><img src="brand_assets/logos/hikvision.png" alt="" class="h-5 w-auto" /></span>
+        <span class="shrink-0 rounded-lg bg-white px-4 py-2 grid place-items-center"><img src="brand_assets/logos/pyronix.png" alt="" class="h-7 w-auto" /></span>
+        <span class="shrink-0 rounded-lg bg-white px-4 py-3 grid place-items-center"><img src="brand_assets/logos/ajax.svg" alt="" class="h-4 w-auto" /></span>
+        <span class="shrink-0 rounded-lg bg-white px-4 py-1.5 grid place-items-center"><img src="brand_assets/logos/hkc.png" alt="" class="h-9 w-auto" /></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services" class="relative py-20 lg:py-28">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="max-w-2xl reveal">
+      <p class="text-teal-500 font-semibold tracking-wide uppercase text-sm">What we do</p>
+      <h2 class="mt-3 text-3xl lg:text-4xl font-bold text-navy-800 tighten">Security systems installed with care, attention to detail and a professional finish.</h2>
+      <p class="mt-4 text-slate-600 lead">From a single video doorbell to a complete alarm and CCTV system, every installation is carefully planned, neatly fitted and fully set up. We hide cables wherever possible, configure your app and show you exactly how everything works before we leave.</p>
+    </div>
+
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <!-- card -->
+      <article class="card-lift reveal group rounded-2xl bg-white p-7 shadow-card border border-navy-900/5">
+        <div class="w-12 h-12 rounded-xl grid place-items-center bg-teal-500/10 text-teal-500"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18v-6a5 5 0 1 1 10 0v6"/><path d="M5 21a1 1 0 0 1-1-1v-1a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1Z"/><path d="M21 12h1M18 5l1-1M20 8.5 21.5 8M2 12h1M6 5 5 4M4 8.5 2.5 8"/></svg></div>
+        <h3 class="mt-5 text-xl font-semibold text-navy-800">Intruder alarms</h3>
+        <p class="mt-2 text-slate-600 lead text-[15px]">Professionally installed wired and wireless alarm systems with app control and instant alerts, allowing you to arm, disarm and check the status of your property from anywhere in the world.</p>
+      </article>
+      <article class="card-lift reveal group rounded-2xl bg-white p-7 shadow-card border border-navy-900/5">
+        <div class="w-12 h-12 rounded-xl grid place-items-center bg-teal-500/10 text-teal-500"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2"/></svg></div>
+        <h3 class="mt-5 text-xl font-semibold text-navy-800">CCTV System Installation</h3>
+        <p class="mt-2 text-slate-600 lead text-[15px]">Professionally installed CCTV systems with full-colour night vision and excellent, crisp coverage using AI. Capture clear, detailed footage of people, vehicles and activity around your property, day and night.</p>
+      </article>
+      <article class="card-lift reveal group rounded-2xl bg-white p-7 shadow-card border border-navy-900/5">
+        <div class="w-12 h-12 rounded-xl grid place-items-center bg-teal-500/10 text-teal-500"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="3"/><circle cx="12" cy="13" r="2.5"/><path d="M12 6h.01"/></svg></div>
+        <h3 class="mt-5 text-xl font-semibold text-navy-800">Video Doorbells</h3>
+        <p class="mt-2 text-slate-600 lead text-[15px]">See and speak to whoever is at your door from your phone, with clear two-way audio and HD recorded footage of every visit — with no monthly fees or subscription charges, ever.</p>
+      </article>
+      <article class="card-lift reveal group rounded-2xl bg-white p-7 shadow-card border border-navy-900/5">
+        <div class="w-12 h-12 rounded-xl grid place-items-center bg-teal-500/10 text-teal-500"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h.01"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M5 12.86a10 10 0 0 1 14 0"/><path d="M8.5 16.43a5 5 0 0 1 7 0"/></svg></div>
+        <h3 class="mt-5 text-xl font-semibold text-navy-800">Remote CCTV Solutions</h3>
+        <p class="mt-2 text-slate-600 lead text-[15px]">We install CCTV in remote buildings and locations without internet access, using reliable 4G connections or microwave links. Ideal for farms, yards, outbuildings, construction sites and other hard-to-reach properties.</p>
+      </article>
+      <article class="card-lift reveal group rounded-2xl bg-white p-7 shadow-card border border-navy-900/5">
+        <div class="w-12 h-12 rounded-xl grid place-items-center bg-teal-500/10 text-teal-500"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3 class="mt-5 text-xl font-semibold text-navy-800">Upgrades &amp; Maintenance</h3>
+        <p class="mt-2 text-slate-600 lead text-[15px]">Keep your CCTV and alarm systems working reliably with professional repairs, servicing and upgrades. We replace outdated cameras, carry out system health checks, change alarm batteries and install additional sounders, keypads, PIR sensors and other equipment as required. Our <b class="text-navy-700">no&nbsp;fix, no&nbsp;fee</b> policy means you won't pay a repair charge unless we get your system working again.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTAGE / SEE THE QUALITY ===== -->
+<section id="footage" class="relative py-20 lg:py-28 bg-navy-900 text-white overflow-hidden grain">
+  <div class="absolute inset-0">
+    <div class="blob drift2" style="width:520px;height:520px;right:-160px;top:10%;background:radial-gradient(circle,#007884,transparent 65%)"></div>
+  </div>
+  <div class="relative mx-auto max-w-7xl px-4">
+    <div class="max-w-2xl reveal">
+      <p class="text-cyan-300 font-semibold tracking-wide uppercase text-sm">See the Difference</p>
+      <h2 class="mt-3 text-3xl lg:text-4xl font-bold tighten">Footage that is clear when it matters most.</h2>
+      <p class="mt-4 text-white/75 lead">Low-quality cameras often produce grainy, unusable images at the exact moment you need them. We install high-quality digital CCTV systems designed to capture sharp, detailed and full-colour footage, day and night. We don't fit budget DIY systems bought from Amazon or eBay — only professional-grade equipment from trusted manufacturers, installed and configured properly. Take a look at real footage captured by systems we've installed for our customers.</p>
+    </div>
+
+    <div class="mt-12 reveal max-w-4xl mx-auto">
+      <div class="cmp border border-white/10 shadow-2xl" style="--pos:50%">
+        <img class="cmp-base" src="brand_assets/gallery/cctv-left-night-c.jpg" alt="Night-time view of the street outside a home, captured in full colour" />
+        <img class="cmp-top" src="brand_assets/gallery/cctv-left-day-c.jpg" alt="The same street view during the day" />
+        <span class="cmp-tag cmp-tag-l">Daytime</span>
+        <span class="cmp-tag cmp-tag-r">Night · full colour</span>
+        <button type="button" class="cmp-handle" role="slider" tabindex="0" aria-label="Drag to compare the daytime and night-time view from the same camera" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 7-5 5 5 5M15 7l5 5-5 5"/></svg>
+        </button>
+      </div>
+      <p class="mt-3 text-sm text-white/60 text-center">Same camera, same spot — <b class="text-white/80">drag the slider</b> to compare day and night. Our cameras stay in full colour after dark.</p>
+    </div>
+
+    <!-- vs budget cameras -->
+    <div class="mt-10 reveal grid md:grid-cols-[1.1fr_1fr] gap-6 items-center rounded-2xl border border-white/10 bg-navy-800/50 p-5 sm:p-6 backdrop-blur">
+      <div>
+        <p class="text-cyan-300 font-semibold text-sm">The budget-camera problem</p>
+        <p class="mt-2 text-white/75 lead text-[15px]">This is the kind of grainy, low-resolution footage a typical cheap camera captures at night — often useless at the exact moment you need it. It's exactly what we replace.</p>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <figure class="rounded-lg overflow-hidden border border-white/10"><img src="brand_assets/gallery/poor-footage-1.jpg" alt="Grainy, low-quality night-time footage from a cheap camera" class="w-full aspect-square object-cover" loading="lazy" /></figure>
+        <figure class="rounded-lg overflow-hidden border border-white/10"><img src="brand_assets/gallery/poor-footage-2.jpg" alt="Blurry, low-resolution night-time footage from a cheap camera" class="w-full aspect-square object-cover" loading="lazy" /></figure>
+      </div>
+    </div>
+    <div class="mt-8 flex flex-wrap gap-4 text-sm text-white/60">
+      <span class="inline-flex items-center gap-2"><svg aria-hidden="true" class="text-cyan-300 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Person &amp; vehicle detection</span>
+      <span class="inline-flex items-center gap-2"><svg aria-hidden="true" class="text-cyan-300 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Two-way audio</span>
+      <span class="inline-flex items-center gap-2"><svg aria-hidden="true" class="text-cyan-300 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> View live on your phone</span>
+      <span class="inline-flex items-center gap-2"><svg aria-hidden="true" class="text-cyan-300 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Recorded &amp; searchable</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SEE THE UPGRADE ===== -->
+<section class="relative py-20 lg:py-28 bg-paper">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="max-w-2xl reveal">
+      <p class="text-teal-500 font-semibold tracking-wide uppercase text-sm">See the Upgrade</p>
+      <h2 class="mt-3 text-3xl lg:text-4xl font-bold text-navy-800 tighten">Modern alarm systems, professionally upgraded or taken over.</h2>
+      <p class="mt-4 text-slate-600 lead">Old alarm systems can become unreliable, difficult to use and expensive to keep repairing. We can upgrade outdated panels, keypads, sensors and external sounders, or fully take over an existing system and bring it back into reliable working order. Where possible, we retain suitable existing equipment to keep costs down — replacing only what's needed and reconfiguring the system properly.</p>
+      <p class="mt-3 text-slate-600 lead">We don't fit cheap DIY alarm kits from Amazon or eBay. We install and maintain professional-grade systems from trusted manufacturers, finished neatly and set up correctly.</p>
+    </div>
+
+    <div class="mt-12 grid md:grid-cols-2 gap-6">
+      <figure class="reveal relative rounded-2xl overflow-hidden shadow-card border border-navy-900/5">
+        <div class="relative aspect-[4/3]"><img src="brand_assets/gallery/alarm-old-removed.jpg" alt="An old, tired alarm system removed and dismantled" class="w-full h-full object-cover" /></div>
+        <figcaption class="absolute top-3 left-3 rounded-full bg-navy-900/80 text-white text-xs font-semibold px-3 py-1">Before — old &amp; tired</figcaption>
+      </figure>
+      <figure class="reveal relative rounded-2xl overflow-hidden shadow-card border border-navy-900/5">
+        <div class="relative aspect-[4/3]"><img src="brand_assets/gallery/alarm-ms-branded.jpg" alt="A modern alarm panel upgraded by MS Security Systems, showing the MS Security name on the display" class="w-full h-full object-cover" /></div>
+        <figcaption class="absolute top-3 left-3 rounded-full bg-teal-500 text-white text-xs font-semibold px-3 py-1">After — MS Security upgrade</figcaption>
+      </figure>
+    </div>
+    <p class="mt-5 text-sm text-slate-600 reveal">The difference between an old, tired alarm system and a modern system upgraded by MS Security Systems.</p>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section id="why" class="relative py-20 lg:py-28">
+  <div class="mx-auto max-w-7xl px-4 grid lg:grid-cols-2 gap-14 items-center">
+    <div class="reveal order-2 lg:order-1">
+      <p class="text-teal-500 font-semibold tracking-wide uppercase text-sm">Why use MS Security?</p>
+      <h2 class="mt-3 text-3xl lg:text-4xl font-bold text-navy-800 tighten">Run by an installer, not a call centre.</h2>
+      <p class="mt-4 text-slate-600 lead">MS Security Systems is led by director <b>Steve Brown</b>. The person who surveys your property is the same person who carries out the installation and answers the phone when you need support afterwards. We're authorised installers of Pyronix and Hikvision systems and keep up to date with the latest products, training and industry developments — you'll even find us at major industry events like The Security Event 2026 at the NEC in Birmingham. So we only recommend technology that's reliable, useful and worth investing in.</p>
+
+      <div class="mt-8 grid sm:grid-cols-2 gap-5">
+        <div class="flex gap-3"><svg aria-hidden="true" class="text-teal-500 shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg><div><h3 class="font-semibold text-navy-800">Local to the North East</h3><p class="text-sm text-slate-600 lead">Based on Tyneside and covering Newcastle, Gateshead, Sunderland, Durham, Northumberland and beyond. You get local service, quicker callouts and a familiar face from start to finish.</p></div></div>
+        <div class="flex gap-3"><svg aria-hidden="true" class="text-teal-500 shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3a2.83 2.83 0 0 0 2 .83 2.83 2.83 0 0 1 2.83 2.83A2.83 2.83 0 0 0 20 12a2.83 2.83 0 0 1 0 4 2.83 2.83 0 0 0-.83 2 2.83 2.83 0 0 1-2.83 2.83A2.83 2.83 0 0 0 12 22a2.83 2.83 0 0 1-4 0 2.83 2.83 0 0 0-2-.83 2.83 2.83 0 0 1-2.83-2.83A2.83 2.83 0 0 0 4 16a2.83 2.83 0 0 1 0-4 2.83 2.83 0 0 0 .83-2 2.83 2.83 0 0 1 2.83-2.83A2.83 2.83 0 0 0 8 3a2.83 2.83 0 0 1 4 0"/></svg><div><h3 class="font-semibold text-navy-800">Genuine, quality equipment</h3><p class="text-sm text-slate-600 lead">We install genuine, professional-grade equipment from trusted security manufacturers — not cheap copies or budget DIY systems that may let you down when you need them most.</p></div></div>
+        <div class="flex gap-3"><svg aria-hidden="true" class="text-teal-500 shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m9.5 14.5-5 5"/><path d="M14 4.5 19.5 10l-8 8-5.5.5.5-5.5z"/><path d="m12 6.5 5.5 5.5"/></svg><div><h3 class="font-semibold text-navy-800">Tidy, professional installations</h3><p class="text-sm text-slate-600 lead">Every installation is completed with care and attention to detail. Cables are hidden wherever possible, equipment is positioned neatly and your property is left clean and tidy.</p></div></div>
+        <div class="flex gap-3"><svg aria-hidden="true" class="text-teal-500 shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2.5"/><path d="M12 18h.01"/></svg><div><h3 class="font-semibold text-navy-800">Setup and aftercare</h3><p class="text-sm text-slate-600 lead">We configure your system and mobile app, show you exactly how everything works and remain available afterwards for support, maintenance and future upgrades.</p></div></div>
+      </div>
+
+      <a href="#quote" class="btn mt-9 inline-flex items-center gap-2 rounded-full bg-navy-600 text-white px-7 py-3.5 font-semibold shadow-glow hover:bg-navy-700">Book a free survey →</a>
+    </div>
+
+    <div class="reveal order-1 lg:order-2 grid grid-cols-2 gap-4 items-stretch">
+      <div class="relative rounded-2xl overflow-hidden shadow-card border border-navy-900/5 shot min-h-[280px]">
+        <img src="brand_assets/gallery/install-06.jpg" alt="Steve Brown, Director of MS Security Systems, at The Security Event industry show" class="absolute inset-0 w-full h-full object-cover" />
+      </div>
+      <div class="grid gap-4">
+        <div class="rounded-2xl overflow-hidden shadow-card border border-navy-900/5 aspect-square shot">
+          <img src="brand_assets/gallery/install-01.jpg" alt="A genuine, professional camera in the box, ready to install" class="w-full h-full object-cover" />
+        </div>
+        <div class="rounded-2xl bg-gradient-to-br from-teal-500 to-navy-600 text-white p-6 flex flex-col justify-center shadow-card">
+          <div class="text-4xl font-bold font-display">100%</div>
+          <p class="mt-1 text-white/85 text-sm leading-snug">of reviewers recommend MS Security on Facebook</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery" class="relative py-20 lg:py-28 bg-paper">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="flex flex-wrap items-end justify-between gap-4 reveal">
+      <div class="max-w-2xl">
+        <p class="text-teal-500 font-semibold tracking-wide uppercase text-sm">Recent Work</p>
+        <h2 class="mt-3 text-3xl lg:text-4xl font-bold text-navy-800 tighten">A closer look at our work.</h2>
+      </div>
+      <button onclick="openAlbum('all')" class="btn inline-flex items-center gap-2 rounded-full bg-navy-600 text-white px-5 py-2.5 text-sm font-semibold shadow-glow hover:bg-navy-700">Browse the full gallery
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+      </button>
+    </div>
+
+    <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-4 cursor-pointer" onclick="openAlbum('all')">
+      <figure class="shot relative rounded-2xl overflow-hidden shadow-card border border-navy-900/5 aspect-square group">
+        <img src="brand_assets/gallery/workspace-06-camera-ready.jpg" alt="A dome camera and coiled cabling, staged and ready to fit" class="w-full h-full object-cover" />
+        <figcaption class="absolute inset-x-0 bottom-0 p-4 text-white text-sm font-medium bg-gradient-to-t from-navy-900/85 to-transparent">Kit staged, ready to fit</figcaption>
+      </figure>
+      <figure class="shot relative rounded-2xl overflow-hidden shadow-card border border-navy-900/5 aspect-square group">
+        <img src="brand_assets/gallery/install-12-camera-brick.jpg" alt="A Hikvision camera being wired and mounted on brickwork" class="w-full h-full object-cover" />
+        <figcaption class="absolute inset-x-0 bottom-0 p-4 text-white text-sm font-medium bg-gradient-to-t from-navy-900/85 to-transparent">Installs happening</figcaption>
+      </figure>
+      <figure class="shot relative rounded-2xl overflow-hidden shadow-card border border-navy-900/5 aspect-square group">
+        <img src="brand_assets/gallery/install-09-ceiling-run.jpg" alt="An installer running cabling neatly along a ceiling corner" class="w-full h-full object-cover" />
+        <figcaption class="absolute inset-x-0 bottom-0 p-4 text-white text-sm font-medium bg-gradient-to-t from-navy-900/85 to-transparent">Tidy first fix</figcaption>
+      </figure>
+      <figure class="shot relative rounded-2xl overflow-hidden shadow-card border border-navy-900/5 aspect-square group">
+        <img src="brand_assets/gallery/panel-04-ms-security-branded.jpg" alt="An old alarm system replaced with a modern MS Security branded panel" class="w-full h-full object-cover" />
+        <figcaption class="absolute inset-x-0 bottom-0 p-4 text-white text-sm font-medium bg-gradient-to-t from-navy-900/85 to-transparent">Old system, new panel</figcaption>
+      </figure>
+    </div>
+    <p class="mt-5 text-xs text-slate-600">Real photos from recent MS Security installs. Tap any image to browse the full gallery, or see more on our <a href="https://www.facebook.com/MSHomeSec" target="_blank" rel="noopener" class="underline hover:text-teal-500">Facebook page</a>.</p>
+  </div>
+</section>
+
+<!-- ===== ALBUM MODAL ===== -->
+<div id="album" class="hidden fixed inset-0 z-[100]" role="dialog" aria-modal="true" aria-labelledby="album-title">
+  <div class="absolute inset-0 bg-navy-900/80 backdrop-blur-sm" onclick="closeAlbum()"></div>
+  <div class="album-panel relative mx-auto my-4 sm:my-8 w-[calc(100%-1.25rem)] max-w-6xl max-h-[calc(100dvh-2rem)] bg-paper rounded-3xl shadow-2xl flex flex-col overflow-hidden" tabindex="-1">
+    <div class="flex items-center justify-between gap-4 px-5 sm:px-7 py-4 border-b border-navy-900/10 bg-white">
+      <div>
+        <h3 id="album-title" class="text-lg sm:text-xl font-bold text-navy-800 font-display">Our work, on site</h3>
+        <p class="text-xs text-slate-600">Real jobs from around the North East — mid-install, kit staged, and old systems swapped for new</p>
+      </div>
+      <button onclick="closeAlbum()" aria-label="Close gallery" class="btn shrink-0 w-10 h-10 grid place-items-center rounded-full bg-navy-900/5 hover:bg-navy-900/10 text-navy-700">
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="flex gap-2 px-5 sm:px-7 py-3 border-b border-navy-900/10 bg-white overflow-x-auto">
+      <button class="album-tab" data-tab="all" onclick="setTab('all')">All</button>
+      <button class="album-tab" data-tab="installs" onclick="setTab('installs')">Installs in progress</button>
+      <button class="album-tab" data-tab="workspace" onclick="setTab('workspace')">Tidy workspace</button>
+      <button class="album-tab" data-tab="panels" onclick="setTab('panels')">Old &amp; new panels</button>
+      <button class="album-tab" data-tab="reviews" onclick="setTab('reviews')">Reviews</button>
+      <button class="album-tab" data-tab="events" onclick="setTab('events')">Events</button>
+    </div>
+    <div id="album-grid" class="p-5 sm:p-7 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 overflow-y-auto">
+      <!-- INSTALLS IN PROGRESS -->
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-12-camera-brick.jpg" data-caption="Wiring and mounting a Hikvision camera on brickwork" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/install-12-camera-brick.jpg" alt="A Hikvision camera being wired and mounted on brickwork, ladder in the background" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Wiring a camera on site</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-13-camera-finished.jpg" data-caption="A finished camera install, weatherproofed under the eaves" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/install-13-camera-finished.jpg" alt="A camera mounted and weatherproofed under the roofline" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Finished &amp; weatherproofed</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-09-ceiling-run.jpg" data-caption="Running cabling neatly along a ceiling corner" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/install-09-ceiling-run.jpg" alt="An installer running cabling neatly along a ceiling corner" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Cabling run in progress</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-08-trunking-corner.jpg" data-caption="Fitting trunking neatly around a room corner" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/install-08-trunking-corner.jpg" alt="An installer fitting trunking around a room corner from a ladder" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Neat trunking, first fix</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-10-wall-fixing.jpg" data-caption="Fixing cable runs to a wall corner from a ladder" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/install-10-wall-fixing.jpg" alt="An installer up a ladder fixing cabling to a wall corner" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Working through first fix</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-11-drilling-soffit.jpg" data-caption="Drilling into a soffit to route an external camera cable" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/install-11-drilling-soffit.jpg" alt="An installer drilling into a soffit outdoors to route a camera cable" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Routing an outdoor cable</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-14-cable-prep.jpg" data-caption="Preparing a camera cable for connection" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/install-14-cable-prep.jpg" alt="A close-up of an installer stripping and preparing a camera cable" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Getting the details right</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-15-cable-run.jpg" data-caption="A cable run laid out neatly along a garden path during install" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/install-15-cable-run.jpg" alt="A cable run laid out along a garden path during an install" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Cable run to the camera</span>
+      </button>
+      <!-- TIDY WORKSPACE -->
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="workspace" data-full="brand_assets/gallery/workspace-06-camera-ready.jpg" data-caption="A dome camera and coiled cabling staged and ready to fit" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/workspace-06-camera-ready.jpg" alt="A dome camera and coiled cabling staged neatly, ready to fit" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Kit staged, ready to fit</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="workspace" data-full="brand_assets/gallery/workspace-02-desk-monitor.jpg" data-caption="A recorder and monitor set up and tested before final fitting" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/workspace-02-desk-monitor.jpg" alt="An HVR recorder and monitor set up on a desk, showing a live camera feed" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Recorder set up &amp; tested</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="workspace" data-full="brand_assets/gallery/workspace-04-staging-desk.jpg" data-caption="Equipment staged neatly on a desk ahead of installation" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/workspace-04-staging-desk.jpg" alt="Equipment boxes and a recorder staged neatly on a desk" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Everything staged &amp; ready</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="workspace" data-full="brand_assets/gallery/workspace-05-parts-laid-out.jpg" data-caption="Cable, connectors and tools laid out and organised" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/workspace-05-parts-laid-out.jpg" alt="Cable reels, screwdrivers and connectors laid out neatly on a windowsill" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Parts kept organised</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="workspace" data-full="brand_assets/gallery/workspace-03-toolboxes-tv.jpg" data-caption="Tools kept tidy and organised on site" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/workspace-03-toolboxes-tv.jpg" alt="Toolboxes and fixings kept tidy and organised on site" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Tools kept tidy on site</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="workspace" data-full="brand_assets/gallery/workspace-07-site-fitout.jpg" data-caption="A room mid fit-out, kept clean and organised throughout" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/workspace-07-site-fitout.jpg" alt="A room mid fit-out with equipment neatly organised, not left in a mess" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Never left in a mess</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="workspace" data-full="brand_assets/gallery/workspace-01-psu-box.jpg" data-caption="A power supply neatly housed and tidily wired" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/workspace-01-psu-box.jpg" alt="A power supply unit neatly housed in its case with tidy wiring" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Neat, tidy wiring</span>
+      </button>
+      <!-- OLD & NEW PANELS -->
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="panels" data-full="brand_assets/gallery/panel-04-ms-security-branded.jpg" data-caption="An MS Security branded panel — a finished, professional replacement" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/panel-04-ms-security-branded.jpg" alt="A finished alarm panel with an MS Security branded sticker and contact number" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">New system, MS branded</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="panels" data-full="brand_assets/gallery/panel-05-ms-security-clean.jpg" data-caption="A modern MS Security branded alarm panel, cleanly installed" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/panel-05-ms-security-clean.jpg" alt="A modern MS Security branded alarm panel, cleanly installed" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Modern panel, clean finish</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="panels" data-full="brand_assets/gallery/panel-06-ms-security-onsite.jpg" data-caption="An MS Security branded panel upgrade fitted on site" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/panel-06-ms-security-onsite.jpg" alt="An MS Security branded alarm panel fitted on site during an upgrade" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Upgrade fitted on site</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="panels" data-full="brand_assets/gallery/panel-02-texecom-veritas-excel.jpg" data-caption="A Texecom Veritas panel being checked and configured" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/panel-02-texecom-veritas-excel.jpg" alt="A Texecom Veritas Excel alarm panel being checked and configured" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Checked &amp; configured</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="panels" data-full="brand_assets/gallery/panel-03-wireless-keypad.jpg" data-caption="An older wireless keypad, the kind of system we take over and upgrade" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/panel-03-wireless-keypad.jpg" alt="An older wireless alarm keypad, the kind of system we take over and upgrade" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Older system, taken over</span>
+      </button>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="panels" data-full="brand_assets/gallery/panel-01-veritas-basic.jpg" data-caption="A basic, unbranded keypad — the kind of tired setup we replace" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/panel-01-veritas-basic.jpg" alt="A basic, unbranded alarm keypad — the kind of tired setup we replace" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">The old, tired setup</span>
+      </button>
+      <!-- REVIEWS -->
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="reviews" data-full="brand_assets/gallery/review-01-facebook-review.jpg" data-caption="A five-star Facebook recommendation for MS Security" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/review-01-facebook-review.jpg" alt="A screenshot of a Facebook review recommending MS Security CCTV & Alarms" class="w-full aspect-square object-cover object-top transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">"Highly recommend...top class"</span>
+      </button>
+      <!-- EVENTS -->
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="events" data-full="brand_assets/gallery/event-01-security-event-birmingham.jpg" data-caption="Steve at The Security Event, NEC Birmingham" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/event-01-security-event-birmingham.jpg" alt="Steve Brown of MS Security at The Security Event trade show in Birmingham" class="w-full aspect-square object-cover object-top transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">The Security Event, NEC</span>
+      </button>
+    </div>
+    <p class="px-5 sm:px-7 py-2.5 text-[11px] text-slate-600 border-t border-navy-900/10 bg-white">All photos are from real MS Security jobs across the North East.</p>
+  </div>
+</div>
+
+<!-- ===== LIGHTBOX ===== -->
+<div id="lightbox" class="hidden fixed inset-0 z-[110]" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <div class="absolute inset-0 bg-navy-900/95" onclick="closeLightbox()"></div>
+  <button onclick="closeLightbox()" aria-label="Close photo" class="btn absolute top-4 right-4 z-10 w-11 h-11 grid place-items-center rounded-full bg-white/10 hover:bg-white/20 text-white">
+    <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <button onclick="lbNav(-1)" aria-label="Previous photo" class="btn absolute left-3 sm:left-5 top-1/2 -translate-y-1/2 z-10 w-11 h-11 grid place-items-center rounded-full bg-white/10 hover:bg-white/20 text-white">
+    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+  </button>
+  <button onclick="lbNav(1)" aria-label="Next photo" class="btn absolute right-3 sm:right-5 top-1/2 -translate-y-1/2 z-10 w-11 h-11 grid place-items-center rounded-full bg-white/10 hover:bg-white/20 text-white">
+    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+  </button>
+  <figure class="relative h-full flex flex-col items-center justify-center p-8 sm:p-16 pointer-events-none">
+    <img id="lb-img" src="" alt="" class="max-h-[78dvh] max-w-full rounded-lg object-contain shadow-2xl" />
+    <figcaption id="lb-cap" class="mt-4 text-white/80 text-sm text-center max-w-xl"></figcaption>
+  </figure>
+</div>
+
+<!-- ===== REVIEWS ===== -->
+<section id="reviews" class="relative py-20 lg:py-28">
+  <div class="mx-auto max-w-7xl px-4">
+    <div>
+      <div class="reveal max-w-3xl">
+        <p class="text-teal-500 font-semibold tracking-wide uppercase text-sm">Don't just take our word for it</p>
+        <h2 class="mt-3 text-3xl lg:text-4xl font-bold text-navy-800 tighten">Trusted by homeowners and businesses across the North East.</h2>
+        <div class="mt-8 flex gap-8">
+          <div><div class="text-4xl font-bold font-display text-teal-500">9.33<span class="text-xl text-slate-600">/10</span></div><p class="text-sm text-slate-600 mt-1">Checkatrade rating</p></div>
+          <div><div class="text-4xl font-bold font-display text-teal-500">100%</div><p class="text-sm text-slate-600 mt-1">Recommended on Facebook</p></div>
+        </div>
+      </div>
+
+      <div class="mt-12 grid gap-5 md:grid-cols-3 items-stretch">
+        <!-- GOOGLE -->
+        <blockquote class="rev-card reveal flex flex-col overflow-hidden rounded-2xl bg-white shadow-card border border-navy-900/5">
+          <a href="https://share.google/ipKq4h8Xrg5Luwu20" target="_blank" rel="noopener" class="rev-head flex items-center justify-between gap-2 px-6 py-3.5 border-b border-navy-900/5" aria-label="Read MS Security's reviews on Google (opens in a new tab)">
+            <span class="inline-flex items-center gap-2 font-semibold text-navy-800 text-sm"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.76h3.56c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.56-2.76c-.98.66-2.23 1.06-3.72 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.09a6.6 6.6 0 0 1 0-4.18V7.07H2.18a11 11 0 0 0 0 9.86l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Google</span>
+            <span class="rev-arrow inline-flex items-center gap-1 text-xs font-semibold text-teal-500">Read reviews <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="p-7 flex flex-1 flex-col">
+            <div role="img" class="flex gap-0.5 text-cyan-400" aria-label="Rated 5 out of 5 stars">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01Z"/></svg>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01Z"/></svg>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01Z"/></svg>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01Z"/></svg>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01Z"/></svg>
+            </div>
+            <p class="mt-3 text-slate-700 lead text-[15px]">"Great service. We had a house alarm, cameras and video doorbells fitted and had no problems at all. Very professional service and would highly recommend."</p>
+            <footer class="mt-auto pt-5 flex items-center gap-3">
+              <span class="w-9 h-9 rounded-full bg-teal-500/15 text-teal-600 grid place-items-center font-semibold">SM</span>
+              <span class="text-sm"><b class="text-navy-800">Stephen Mcclarence</b><br><span class="text-slate-600">Verified review</span></span>
+            </footer>
+          </div>
+        </blockquote>
+        <!-- FACEBOOK -->
+        <blockquote class="rev-card reveal flex flex-col overflow-hidden rounded-2xl bg-white shadow-card border border-navy-900/5">
+          <a href="https://www.facebook.com/MSHomeSec/reviews" target="_blank" rel="noopener" class="rev-head flex items-center justify-between gap-2 px-6 py-3.5 border-b border-navy-900/5" aria-label="Read MS Security's reviews on Facebook (opens in a new tab)">
+            <span class="inline-flex items-center gap-2 font-semibold text-navy-800 text-sm"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path fill="#1877F2" d="M24 12a12 12 0 1 0-13.875 11.854v-8.385H7.078V12h3.047V9.356c0-3.007 1.792-4.669 4.533-4.669 1.313 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874V12h3.328l-.532 3.469h-2.796v8.385A12 12 0 0 0 24 12z"/></svg>Facebook</span>
+            <span class="rev-arrow inline-flex items-center gap-1 text-xs font-semibold text-teal-500">Read reviews <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="p-7 flex flex-1 flex-col">
+            <div role="img" class="flex gap-0.5 text-cyan-400" aria-label="Rated 5 out of 5 stars">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01Z"/></svg>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01Z"/></svg>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01Z"/></svg>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01Z"/></svg>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01Z"/></svg>
+            </div>
+            <p class="mt-3 text-slate-700 lead text-[15px]">"The camera quality is unbelievable! Such clear footage even at night, and it captures sound and detects people and vehicles. Steve was so helpful and helped us get set up with the app — and checked in that everything was running smoothly even after the job."</p>
+            <footer class="mt-auto pt-5 flex items-center gap-3">
+              <span class="w-9 h-9 rounded-full bg-teal-500/15 text-teal-600 grid place-items-center font-semibold">JR</span>
+              <span class="text-sm"><b class="text-navy-800">Jacolyn Roche</b><br><span class="text-slate-600">Verified review</span></span>
+            </footer>
+          </div>
+        </blockquote>
+        <!-- CHECKATRADE -->
+        <blockquote class="rev-card reveal flex flex-col overflow-hidden rounded-2xl bg-white shadow-card border border-navy-900/5">
+          <a href="https://www.checkatrade.com/trades/mssecuritysystems" target="_blank" rel="noopener" class="rev-head flex items-center justify-between gap-2 px-6 py-3.5 border-b border-navy-900/5" aria-label="Read MS Security's reviews on Checkatrade (opens in a new tab)">
+            <span class="inline-flex items-center gap-2 font-semibold text-navy-800 text-sm"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#0B4DA2"/><path d="M6 12.5l3.6 3.5L18 7.3" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Checkatrade</span>
+            <span class="rev-arrow inline-flex items-center gap-1 text-xs font-semibold text-teal-500">Read reviews <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <div class="p-7 flex flex-1 flex-col">
+            <div role="img" class="flex gap-0.5 text-cyan-400" aria-label="Rated 5 out of 5 stars">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01Z"/></svg>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01Z"/></svg>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01Z"/></svg>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01Z"/></svg>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01Z"/></svg>
+            </div>
+            <p class="mt-3 text-slate-700 lead text-[15px]">"I had MS Security install 4 Hikvision cameras in my home and couldn't be happier. Carried out to a very high standard with all cables neatly hidden — a really professional finish. They took the time to demonstrate the system, and the price was very fair. I'd definitely recommend."</p>
+            <footer class="mt-auto pt-5 flex items-center gap-3">
+              <span class="w-9 h-9 rounded-full bg-teal-500/15 text-teal-600 grid place-items-center font-semibold">✓</span>
+              <span class="text-sm"><b class="text-navy-800">Verified customer</b><br><span class="text-slate-600">9.33/10 · September 2025</span></span>
+            </footer>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AREAS ===== -->
+<section id="areas" class="relative py-20 lg:py-28 bg-navy-900 text-white overflow-hidden grain">
+  <div class="absolute inset-0"><div class="blob drift" style="width:480px;height:480px;left:-140px;bottom:-160px;background:radial-gradient(circle,#0CA8B4,transparent 64%)"></div></div>
+  <div class="relative mx-auto max-w-7xl px-4">
+    <div class="max-w-2xl reveal">
+      <p class="text-cyan-300 font-semibold tracking-wide uppercase text-sm">Areas We Cover</p>
+      <h2 class="mt-3 text-3xl lg:text-4xl font-bold tighten">Professional alarm and CCTV installations across the North East.</h2>
+      <p class="mt-4 text-white/75 lead">We regularly work throughout Newcastle, Gateshead, Sunderland, Durham and Northumberland, as well as the surrounding areas. Not sure whether we cover your location? Get in touch — we're always happy to check.</p>
+    </div>
+    <ul class="mt-10 flex flex-wrap gap-3 reveal">
+      <!-- areas -->
+      <li class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium hover:border-cyan-300 hover:text-cyan-300 transition-colors">Newcastle upon Tyne</li>
+      <li class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium hover:border-cyan-300 hover:text-cyan-300 transition-colors">Gateshead</li>
+      <li class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium hover:border-cyan-300 hover:text-cyan-300 transition-colors">Sunderland</li>
+      <li class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium hover:border-cyan-300 hover:text-cyan-300 transition-colors">Durham</li>
+      <li class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium hover:border-cyan-300 hover:text-cyan-300 transition-colors">South Shields</li>
+      <li class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium hover:border-cyan-300 hover:text-cyan-300 transition-colors">North Shields</li>
+      <li class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium hover:border-cyan-300 hover:text-cyan-300 transition-colors">Washington</li>
+      <li class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium hover:border-cyan-300 hover:text-cyan-300 transition-colors">Chester-le-Street</li>
+      <li class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium hover:border-cyan-300 hover:text-cyan-300 transition-colors">Ashington</li>
+      <li class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium hover:border-cyan-300 hover:text-cyan-300 transition-colors">Northumberland</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== QUOTE / CONTACT ===== -->
+<section id="quote" class="relative py-20 lg:py-28 bg-paper">
+  <div class="mx-auto max-w-7xl px-4 grid lg:grid-cols-2 gap-12 items-start">
+    <div class="reveal">
+      <p class="text-teal-500 font-semibold tracking-wide uppercase text-sm">Free, No-Obligation Quote</p>
+      <h2 class="mt-3 text-3xl lg:text-4xl font-bold text-navy-800 tighten">Tell us what you need protecting.</h2>
+      <p class="mt-4 text-slate-600 lead">Send us a few details and Steve will get back to you to discuss your requirements, arrange a free security survey and provide a clear, straightforward quote with no pressure and no obligation. Prefer to speak directly? Call or WhatsApp us.</p>
+
+      <div class="mt-8 space-y-4">
+        <a href="tel:+447773822192" class="flex items-center gap-4 group">
+          <span class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-500 grid place-items-center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <span><span class="block text-xs text-slate-600">Call us</span><b class="text-navy-800 group-hover:text-teal-500 transition-colors">07773 822192</b></span>
+        </a>
+        <a href="https://wa.me/447773822192" class="flex items-center gap-4 group">
+          <span class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-500 grid place-items-center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></span>
+          <span><span class="block text-xs text-slate-600">WhatsApp</span><b class="text-navy-800 group-hover:text-teal-500 transition-colors">Message 07773 822192</b></span>
+        </a>
+        <a href="mailto:steve@mssecurity.uk" class="flex items-center gap-4 group">
+          <span class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-500 grid place-items-center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+          <span><span class="block text-xs text-slate-600">Email</span><b class="text-navy-800 group-hover:text-teal-500 transition-colors">steve@mssecurity.uk</b></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Netlify form -->
+    <form name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?sent=1"
+          class="reveal rounded-3xl bg-white p-7 lg:p-8 shadow-card border border-navy-900/5">
+      <input type="hidden" name="form-name" value="quote" />
+      <p class="hidden"><label>Don't fill this in: <input name="bot-field" /></label></p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <label class="block">
+          <span class="text-sm font-medium text-navy-700">Your name <abbr title="required" class="text-teal-500 no-underline">*</abbr></span>
+          <input required name="name" type="text" autocomplete="name" class="mt-1.5 w-full rounded-xl border border-navy-900/15 bg-paper/50 px-4 py-3 focus:border-teal-500 focus:ring-0 outline-none transition-colors" placeholder="Jane Smith" />
+        </label>
+        <label class="block">
+          <span class="text-sm font-medium text-navy-700">Phone <abbr title="required" class="text-teal-500 no-underline">*</abbr></span>
+          <input required name="phone" type="tel" autocomplete="tel" inputmode="tel" class="mt-1.5 w-full rounded-xl border border-navy-900/15 bg-paper/50 px-4 py-3 focus:border-teal-500 focus:ring-0 outline-none transition-colors" placeholder="07…" />
+        </label>
+      </div>
+      <label class="block mt-4">
+        <span class="text-sm font-medium text-navy-700">Email <span class="text-slate-600 font-normal">(optional)</span></span>
+        <input name="email" type="email" autocomplete="email" inputmode="email" spellcheck="false" autocapitalize="off" class="mt-1.5 w-full rounded-xl border border-navy-900/15 bg-paper/50 px-4 py-3 focus:border-teal-500 focus:ring-0 outline-none transition-colors" placeholder="you@email.com" />
+      </label>
+      <label class="block mt-4">
+        <span class="text-sm font-medium text-navy-700">Address <abbr title="required" class="text-teal-500 no-underline">*</abbr></span>
+        <input required name="address" type="text" autocomplete="street-address" class="mt-1.5 w-full rounded-xl border border-navy-900/15 bg-paper/50 px-4 py-3 focus:border-teal-500 focus:ring-0 outline-none transition-colors" placeholder="12 Acacia Avenue" />
+      </label>
+      <div class="grid sm:grid-cols-2 gap-4 mt-4">
+        <label class="block">
+          <span class="text-sm font-medium text-navy-700">Postcode <abbr title="required" class="text-teal-500 no-underline">*</abbr></span>
+          <input required name="postcode" type="text" autocomplete="postal-code" autocapitalize="characters" class="mt-1.5 w-full rounded-xl border border-navy-900/15 bg-paper/50 px-4 py-3 focus:border-teal-500 focus:ring-0 outline-none transition-colors" placeholder="NE11 0XX" />
+        </label>
+        <label class="block">
+          <span class="text-sm font-medium text-navy-700">Budget <span class="text-slate-600 font-normal">(optional)</span></span>
+          <input name="budget" type="text" class="mt-1.5 w-full rounded-xl border border-navy-900/15 bg-paper/50 px-4 py-3 focus:border-teal-500 focus:ring-0 outline-none transition-colors" placeholder="e.g. £800 – £1,200" />
+        </label>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-4 mt-4">
+        <label class="block">
+          <span class="text-sm font-medium text-navy-700">What do you need? <abbr title="required" class="text-teal-500 no-underline">*</abbr></span>
+          <select required name="service" class="mt-1.5 w-full rounded-xl border border-navy-900/15 bg-paper/50 px-4 py-3 focus:border-teal-500 focus:ring-0 outline-none transition-colors">
+            <option value="" disabled selected>Select an option</option>
+            <option>Alarm — Installation</option>
+            <option>Alarm — Upgrade</option>
+            <option>Alarm — Repair</option>
+            <option>CCTV — Installation</option>
+            <option>CCTV — Upgrade</option>
+            <option>CCTV — Repair</option>
+            <option>Video Doorbell — Installation</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label class="block">
+          <span class="text-sm font-medium text-navy-700">Anything else? <span class="text-slate-600 font-normal">(optional)</span></span>
+          <textarea name="message" rows="3" class="mt-1.5 w-full rounded-xl border border-navy-900/15 bg-paper/50 px-4 py-3 focus:border-teal-500 focus:ring-0 outline-none transition-colors" placeholder="e.g. Semi-detached house in Gateshead, want alarm and camera coverage front and back…"></textarea>
+        </label>
+      </div>
+      <button type="submit" class="btn mt-6 w-full rounded-full bg-cyan-400 text-navy-900 px-6 py-4 font-semibold shadow-glow hover:bg-cyan-300">Send my request →</button>
+      <p class="mt-3 text-xs text-slate-600 text-center">No spam, no pushy sales. We only use your details to give you a quote. See our <a href="privacy.html" class="underline underline-offset-2 hover:text-teal-600">Privacy Policy</a>.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-navy-900 text-white/70">
+  <div class="mx-auto max-w-7xl px-4 py-14 grid gap-10 md:grid-cols-[1.5fr_1fr_1fr_1.1fr]">
+    <div>
+      <div class="flex items-center gap-3">
+        <img src="brand_assets/ms_security_logo_mark.png" alt="MS Security Systems logo" class="h-14 w-auto" />
+        <span class="font-display font-bold leading-none">
+          <span class="block text-white text-xl tracking-tight">MS Security Systems</span>
+          <span class="block text-cyan-300 text-[11px] font-semibold tracking-[0.28em] mt-1.5">LIMITED · NORTH EAST</span>
+        </span>
+      </div>
+      <p class="mt-5 max-w-sm text-sm lead">Professional alarms and CCTV, installed properly across the North East. Genuine equipment, tidy workmanship and aftercare you can rely on.</p>
+      <div class="mt-5 flex gap-3">
+        <a href="https://www.facebook.com/MSHomeSec" target="_blank" rel="noopener" class="w-11 h-11 rounded-full border border-white/15 grid place-items-center hover:border-cyan-300 hover:text-cyan-300 transition-colors" aria-label="Facebook"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615z"/></svg></a>
+        <a href="https://wa.me/447773822192" class="w-11 h-11 rounded-full border border-white/15 grid place-items-center hover:border-cyan-300 hover:text-cyan-300 transition-colors" aria-label="WhatsApp"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></a>
+        <a href="mailto:steve@mssecurity.uk" class="w-11 h-11 rounded-full border border-white/15 grid place-items-center hover:border-cyan-300 hover:text-cyan-300 transition-colors" aria-label="Email"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold">Our Security Services</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a href="#services" class="hover:text-cyan-300">Intruder Alarm Systems</a></li>
+        <li><a href="#services" class="hover:text-cyan-300">CCTV Systems</a></li>
+        <li><a href="#services" class="hover:text-cyan-300">Smart Video Doorbells</a></li>
+        <li><a href="#services" class="hover:text-cyan-300">4G and Microwave Links</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold">Explore</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a href="our-story.html" class="hover:text-cyan-300">About Us</a></li>
+        <li><a href="security-awareness.html" class="hover:text-cyan-300">Security Awareness</a></li>
+        <li><a href="community.html" class="hover:text-cyan-300">Community</a></li>
+        <li><a href="#reviews" class="hover:text-cyan-300">Reviews</a></li>
+        <li><a href="#quote" class="hover:text-cyan-300">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold">Get in touch</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a href="tel:+447773822192" class="inline-flex items-center gap-2 hover:text-cyan-300"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 07773 822192</a></li>
+        <li><a href="mailto:steve@mssecurity.uk" class="inline-flex items-center gap-2 hover:text-cyan-300"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> steve@mssecurity.uk</a></li>
+        <li class="pt-2 text-white/55">Serving homes and businesses across the North East</li>
+        <li class="text-white/55">Available Monday to Saturday, with flexible appointment times</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/60">
+      <p>&copy; <span id="yr"></span> MS Security Systems Limited &middot; Company No. 16529092 &middot; Registered in England &amp; Wales &middot; Reg. office: 36 Ouselaw, Gateshead, NE11 0TL.</p>
+      <p><a href="privacy.html" class="hover:text-cyan-300 underline underline-offset-2">Privacy Policy</a> &middot; Hikvision&reg;, Pyronix&reg;, Ajax&reg; and HKC&reg; are trademarks of their respective owners. MS Security Systems Limited is an independent installer.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- back to top -->
+<button id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top" class="opacity-0 pointer-events-none fixed bottom-5 left-5 lg:left-auto lg:right-5 z-40 btn rounded-full bg-navy-600 text-white w-12 h-12 grid place-items-center shadow-glow hover:bg-navy-700 transition-opacity duration-300">
+  <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<!-- floating call button (mobile) -->
+<a href="tel:+447773822192" class="lg:hidden fixed bottom-5 right-5 z-40 btn rounded-full bg-cyan-400 text-navy-900 w-14 h-14 grid place-items-center shadow-glow" aria-label="Call us"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+
+<script>
+  // year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // mobile menu
+  const burger = document.getElementById('burger'), mobile = document.getElementById('mobile');
+  burger.addEventListener('click', () => mobile.classList.toggle('hidden'));
+  mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobile.classList.add('hidden')));
+
+  // nav dropdowns (click/keyboard toggle; hover is handled in CSS)
+  document.querySelectorAll('.nav-group').forEach(group => {
+    const trigger = group.querySelector('.navtrigger');
+    if (!trigger) return;
+    const setOpen = on => { group.classList.toggle('open', on); trigger.setAttribute('aria-expanded', on ? 'true' : 'false'); };
+    trigger.addEventListener('click', () => setOpen(!group.classList.contains('open')));
+    group.addEventListener('keydown', e => { if (e.key === 'Escape') { setOpen(false); trigger.focus(); } });
+    group.addEventListener('focusout', e => { if (!group.contains(e.relatedTarget)) setOpen(false); });
+  });
+  document.addEventListener('click', e => {
+    document.querySelectorAll('.nav-group.open').forEach(g => {
+      if (!g.contains(e.target)) { g.classList.remove('open'); g.querySelector('.navtrigger').setAttribute('aria-expanded', 'false'); }
+    });
+  });
+
+  // nav shadow on scroll
+  const nav = document.getElementById('nav');
+  const toTop = document.getElementById('toTop');
+  addEventListener('scroll', () => {
+    nav.classList.toggle('shadow-card', scrollY > 8);
+    const show = scrollY > 500;
+    toTop.classList.toggle('opacity-0', !show);
+    toTop.classList.toggle('pointer-events-none', !show);
+  }, { passive:true });
+
+  // reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold:0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // ===== Hero video =====
+  (function () {
+    const vid = document.getElementById('heroVid');
+    const btn = document.getElementById('vidToggle');
+    if (!vid) return;
+    const iconPause = '<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>';
+    const iconPlay = '<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+    const setBtn = (playing) => { if (btn) { btn.innerHTML = playing ? iconPause : iconPlay; btn.setAttribute('aria-label', playing ? 'Pause animation' : 'Play animation'); } };
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) { vid.removeAttribute('autoplay'); vid.pause(); setBtn(false); }
+    else { setBtn(true); }
+    if (btn) btn.addEventListener('click', () => { vid.paused ? vid.play() : vid.pause(); });
+    vid.addEventListener('play', () => setBtn(true));
+    vid.addEventListener('pause', () => setBtn(false));
+  })();
+
+  // ===== Day/night comparison slider =====
+  document.querySelectorAll('.cmp').forEach(function (cmp) {
+    var handle = cmp.querySelector('.cmp-handle');
+    function set(v) { v = Math.max(0, Math.min(100, v)); cmp.style.setProperty('--pos', v + '%'); if (handle) handle.setAttribute('aria-valuenow', Math.round(v)); }
+    function fromX(x) { var r = cmp.getBoundingClientRect(); return (x - r.left) / r.width * 100; }
+    var drag = false;
+    cmp.addEventListener('pointerdown', function (e) { drag = true; try { cmp.setPointerCapture(e.pointerId); } catch (_) {} set(fromX(e.clientX)); if (handle) handle.focus(); });
+    cmp.addEventListener('pointermove', function (e) { if (drag) set(fromX(e.clientX)); });
+    window.addEventListener('pointerup', function () { drag = false; });
+    if (handle) handle.addEventListener('keydown', function (e) {
+      var cur = parseFloat(cmp.style.getPropertyValue('--pos')) || 50;
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') { set(cur - 4); e.preventDefault(); }
+      else if (e.key === 'ArrowRight' || e.key === 'ArrowUp') { set(cur + 4); e.preventDefault(); }
+      else if (e.key === 'Home') { set(0); e.preventDefault(); }
+      else if (e.key === 'End') { set(100); e.preventDefault(); }
+    });
+    set(50);
+  });
+
+  // ===== Album modal + lightbox =====
+  let lbList = [], lbIndex = 0, lastFocus = null;
+  const $ = id => document.getElementById(id);
+  const isHidden = el => el.classList.contains('hidden');
+
+  window.openAlbum = function (cat) {
+    lastFocus = document.activeElement;
+    $('album').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    setTab(cat || 'all');
+    $('album').querySelector('.album-panel').focus();
+  };
+  window.closeAlbum = function () {
+    $('album').classList.add('hidden');
+    if (isHidden($('lightbox'))) document.body.style.overflow = '';
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  };
+  window.setTab = function (cat) {
+    document.querySelectorAll('.album-tab').forEach(b => b.setAttribute('aria-pressed', b.dataset.tab === cat));
+    document.querySelectorAll('#album-grid .album-item').forEach(it => {
+      it.classList.toggle('hidden', !(cat === 'all' || it.dataset.cat === cat));
+    });
+    $('album-grid').scrollTop = 0;
+  };
+  const visibleItems = () => [...document.querySelectorAll('#album-grid .album-item')].filter(it => !isHidden(it));
+  window.openLightbox = function (el) {
+    lbList = visibleItems();
+    lbIndex = Math.max(0, lbList.indexOf(el));
+    showLb();
+    $('lightbox').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    $('lightbox').querySelector('button').focus();
+  };
+  function showLb () {
+    const el = lbList[lbIndex]; if (!el) return;
+    const img = $('lb-img');
+    img.src = el.dataset.full;
+    img.alt = el.dataset.caption || '';
+    $('lb-cap').textContent = el.dataset.caption || '';
+  }
+  window.lbNav = function (d) { if (lbList.length) { lbIndex = (lbIndex + d + lbList.length) % lbList.length; showLb(); } };
+  window.closeLightbox = function () {
+    $('lightbox').classList.add('hidden');
+    if (isHidden($('album'))) document.body.style.overflow = '';
+  };
+  // open album on keyboard activation of the teaser grid
+  document.querySelectorAll('[role=button][aria-label="Open photo gallery"]').forEach(el =>
+    el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openAlbum('all'); } }));
+  document.addEventListener('keydown', e => {
+    const lbOpen = !isHidden($('lightbox')), alOpen = !isHidden($('album'));
+    if (e.key === 'Escape') { if (lbOpen) closeLightbox(); else if (alOpen) closeAlbum(); }
+    if (lbOpen) { if (e.key === 'ArrowLeft') lbNav(-1); if (e.key === 'ArrowRight') lbNav(1); }
+    // focus trap: keep Tab within the topmost open dialog
+    if (e.key === 'Tab' && (lbOpen || alOpen)) {
+      const dialog = lbOpen ? $('lightbox') : $('album');
+      const f = [...dialog.querySelectorAll('a[href],button,input,select,textarea,[tabindex]:not([tabindex="-1"])')]
+        .filter(el => !el.disabled && el.offsetParent !== null);
+      if (!f.length) return;
+      const first = f[0], last = f[f.length - 1];
+      if (!dialog.contains(document.activeElement)) { e.preventDefault(); first.focus(); }
+      else if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+
+  // simple sent confirmation
+  if (new URLSearchParams(location.search).get('sent')) {
+    const f = document.querySelector('form[name=quote]');
+    if (f) {
+      f.innerHTML = '<div role="status" tabindex="-1" class="text-center py-10 outline-none"><svg aria-hidden="true" class="mx-auto text-teal-500" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg><h3 class="mt-4 text-2xl font-bold text-navy-800 font-display">Thanks — request received!</h3><p class="mt-2 text-slate-600">Steve will be in touch shortly. For anything urgent, call <a href="tel:+447773822192" class="text-teal-500 font-semibold">07773 822192</a>.</p></div>';
+      const msg = f.querySelector('[role=status]');
+      requestAnimationFrame(() => msg.focus());
+    }
+  }
+</script>
+</body>
+</html>

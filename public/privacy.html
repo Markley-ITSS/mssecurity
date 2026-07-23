@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>document.documentElement.className += ' js';</script>
+<title>Privacy Policy | MS Security Systems Limited — how we handle your data</title>
+<meta name="description" content="How MS Security Systems Limited collects, uses and protects your personal information when you contact us or use our website, and your rights under UK data protection law." />
+<meta name="robots" content="index, follow" />
+<meta property="og:title" content="Privacy Policy — MS Security Systems Limited" />
+<meta property="og:description" content="How we collect, use and protect your personal information, and your rights under UK data protection law." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="brand_assets/ms_security_logo_mark.png" />
+<link rel="preload" as="font" type="font/woff2" href="brand_assets/fonts/inter-var.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="brand_assets/fonts/space-grotesk-var.woff2" crossorigin />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { navy:{900:'#00121F',800:'#001C33',700:'#002B47',600:'#003C60',500:'#00486C'}, teal:{600:'#006C7A',500:'#007884',400:'#0CA8B4'}, cyan:{400:'#12BAC6',300:'#35D0DB'}, paper:'#F5F6F4', ink:'#0A1722' },
+  fontFamily: { display:['"Space Grotesk"','system-ui','sans-serif'], sans:['Inter','system-ui','sans-serif'] },
+  boxShadow: { glow:'0 0 0 1px rgba(18,186,198,.25), 0 18px 50px -12px rgba(0,120,132,.55)', card:'0 1px 2px rgba(0,28,51,.06), 0 18px 40px -20px rgba(0,60,96,.35)' }
+}}}
+</script>
+<style>
+  /* self-hosted fonts (SIL OFL) — served from our own domain, not a font CDN */
+  @font-face{ font-family:'Space Grotesk'; font-style:normal; font-weight:400 700; font-display:swap; src:url('brand_assets/fonts/space-grotesk-var.woff2') format('woff2'); }
+  @font-face{ font-family:'Inter'; font-style:normal; font-weight:400 700; font-display:swap; src:url('brand_assets/fonts/inter-var.woff2') format('woff2'); }
+  :root{ --ease:cubic-bezier(.16,1,.3,1); }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:Inter,system-ui,sans-serif; color:#0A1722; background:#F5F6F4; -webkit-font-smoothing:antialiased; }
+  h1,h2,h3,.font-display{ font-family:"Space Grotesk",system-ui,sans-serif; }
+  .tighten{ letter-spacing:-0.03em; }
+  .lead{ line-height:1.7; }
+  .grain::before{ content:""; position:absolute; inset:0; pointer-events:none; opacity:.5; mix-blend-mode:overlay; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E"); }
+  .blob{ position:absolute; border-radius:50%; filter:blur(60px); opacity:.55; }
+  .grad-text{ background:linear-gradient(100deg,#35D0DB,#0CA8B4 40%,#12BAC6); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .navlink{ position:relative; } .navlink::after{ content:""; position:absolute; left:0; bottom:-4px; height:2px; width:0; background:#35D0DB; transition:width .3s var(--ease); } .navlink:hover::after,.navlink:focus-visible::after{ width:100%; }
+  .btn{ transition:transform .25s var(--ease), box-shadow .25s var(--ease), background-color .25s var(--ease); } .btn:hover{ transform:translateY(-2px); } .btn:active{ transform:translateY(0); }
+  .js .reveal{ opacity:0; transform:translateY(22px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
+  .js .reveal.in{ opacity:1; transform:none; }
+  :focus-visible{ outline:3px solid #12BAC6; outline-offset:3px; border-radius:6px; }
+  /* legal prose */
+  .prose h2{ font-size:1.35rem; font-weight:600; color:#001C33; letter-spacing:-0.02em; scroll-margin-top:96px; }
+  .prose h3{ font-size:1.05rem; font-weight:600; color:#002B47; margin-top:1.5rem; }
+  .prose p{ margin-top:.9rem; color:#334155; line-height:1.75; }
+  .prose ul{ margin-top:.9rem; padding-left:1.25rem; list-style:disc; color:#334155; line-height:1.75; }
+  .prose ul li{ margin-top:.4rem; }
+  .prose a{ color:#006C7A; text-decoration:underline; text-underline-offset:2px; } .prose a:hover{ color:#00486C; }
+  .prose section + section{ margin-top:2.75rem; }
+  /* abbr tooltips for legal terms — dotted underline signals a hover/focus definition */
+  abbr[title]{ text-decoration:underline dotted; text-underline-offset:3px; cursor:help; }
+  @media (prefers-reduced-motion: reduce){ *{ animation:none !important; scroll-behavior:auto !important; } .js .reveal,.reveal{ opacity:1 !important; transform:none !important; transition:none !important; } }
+  /* nav dropdowns (disclosure pattern: hover for mouse, click/keyboard for the rest) */
+  .nav-group{ position:relative; }
+  .navtrigger{ display:inline-flex; align-items:center; gap:.28rem; cursor:pointer; background:none; border:0; padding:0; font:inherit; color:inherit; }
+  .navtrigger .chev{ transition:transform .25s var(--ease); }
+  .nav-group:hover .navtrigger .chev, .nav-group.open .navtrigger .chev{ transform:rotate(180deg); }
+  .dropmenu{ position:absolute; top:calc(100% + 12px); left:0; min-width:210px; background:#fff; border:1px solid rgba(0,28,51,.08); border-radius:14px; box-shadow:0 1px 2px rgba(0,28,51,.06), 0 18px 40px -20px rgba(0,60,96,.35); padding:.4rem; opacity:0; visibility:hidden; transform:translateY(6px); transition:opacity .2s var(--ease), transform .2s var(--ease), visibility .2s; z-index:60; }
+  .dropmenu::before{ content:""; position:absolute; left:0; right:0; top:-12px; height:12px; }
+  .nav-group:hover .dropmenu, .nav-group.open .dropmenu{ opacity:1; visibility:visible; transform:translateY(0); }
+  .dropmenu a{ display:block; padding:.55rem .8rem; border-radius:9px; font-size:.9rem; font-weight:500; color:#002B47; white-space:nowrap; }
+  .dropmenu a:hover, .dropmenu a:focus-visible{ background:#F5F6F4; color:#007884; }
+</style>
+</head>
+<body class="antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-navy-800 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">Skip to content</a>
+
+<!-- ===== TOP BAR ===== -->
+<div class="bg-navy-900 text-white/80 text-[13px]">
+  <div class="mx-auto max-w-7xl px-4 h-10 flex items-center justify-between">
+    <p class="hidden sm:flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-cyan-300"></span> Covering Tyne and Wear, Northumberland and County Durham</p>
+    <div class="flex items-center gap-4">
+      <a href="tel:+447773822192" class="inline-flex items-center gap-1.5 hover:text-cyan-300 transition-colors"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>07773 822192</a>
+      <a href="https://wa.me/447773822192" class="hidden sm:inline hover:text-cyan-300 transition-colors">WhatsApp</a>
+      <a href="mailto:steve@mssecurity.uk" class="hidden md:inline hover:text-cyan-300 transition-colors">steve@mssecurity.uk</a>
+    </div>
+  </div>
+</div>
+<!-- ===== NAV ===== -->
+<header id="nav" class="sticky top-0 z-50 transition-all duration-300 bg-white/85 backdrop-blur-lg border-b border-navy-900/10">
+  <div class="mx-auto max-w-7xl px-4 h-[72px] flex items-center justify-between gap-3">
+    <a href="index.html" class="flex items-center gap-2.5 shrink-0">
+      <img src="brand_assets/ms_security_logo_mark.png" alt="MS Security Systems logo" class="h-10 w-auto" />
+      <span class="font-display font-bold leading-none">
+        <span class="block text-navy-700 text-[14px] sm:text-[16px] tracking-tight">MS Security Systems</span>
+        <span class="block text-teal-500 text-[9px] sm:text-[10px] font-semibold tracking-[0.28em] mt-1">LIMITED</span>
+      </span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-x-6 text-[14px] font-medium text-navy-700">
+      <div class="nav-group">
+        <button type="button" class="navtrigger hover:text-teal-500 transition-colors" aria-expanded="false" aria-controls="about-menu">About
+          <svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div id="about-menu" class="dropmenu">
+          <a href="our-story.html">About Us</a>
+          <a href="index.html#why">Why Choose Us</a>
+          <a href="community.html">Community</a>
+        </div>
+      </div>
+      <a href="index.html#services" class="navlink hover:text-teal-500 transition-colors">Services</a>
+      <div class="nav-group">
+        <button type="button" class="navtrigger hover:text-teal-500 transition-colors" aria-expanded="false" aria-controls="work-menu">Our Work
+          <svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div id="work-menu" class="dropmenu">
+          <a href="index.html#gallery">Recent Work</a>
+          <a href="index.html#reviews">Reviews</a>
+          <a href="index.html#footage">Quality Systems</a>
+        </div>
+      </div>
+      <a href="security-awareness.html" class="navlink hover:text-teal-500 transition-colors">Awareness</a>
+      <a href="index.html#quote" class="navlink hover:text-teal-500 transition-colors">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="index.html#quote" class="btn hidden sm:inline-flex items-center gap-2 rounded-full bg-navy-600 text-white px-5 py-2.5 text-sm font-semibold shadow-glow hover:bg-navy-700">Free quote</a>
+      <button id="burger" aria-label="Open menu" class="lg:hidden p-2 text-navy-700"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <div id="mobile" class="lg:hidden hidden border-t border-navy-900/10 bg-white">
+    <nav class="px-4 py-3 flex flex-col text-navy-700 font-medium">
+      <a href="our-story.html" class="py-2.5 border-b border-navy-900/5">About Us</a>
+      <a href="index.html#why" class="py-2.5 border-b border-navy-900/5">Why Choose Us</a>
+      <a href="community.html" class="py-2.5 border-b border-navy-900/5">Community</a>
+      <a href="index.html#services" class="py-2.5 border-b border-navy-900/5">Services</a>
+      <a href="index.html#gallery" class="py-2.5 border-b border-navy-900/5">Recent Work</a>
+      <a href="index.html#reviews" class="py-2.5 border-b border-navy-900/5">Reviews</a>
+      <a href="index.html#footage" class="py-2.5 border-b border-navy-900/5">Quality Systems</a>
+      <a href="security-awareness.html" class="py-2.5 border-b border-navy-900/5">Security Awareness</a>
+      <a href="index.html#quote" class="mt-3 mb-1 text-center rounded-full bg-navy-600 text-white px-5 py-3 font-semibold">Contact / Free quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===== HERO ===== -->
+<section class="relative overflow-hidden bg-navy-900 text-white grain">
+  <div class="absolute inset-0" aria-hidden="true">
+    <div class="blob" style="width:420px;height:420px;left:-100px;top:-120px;background:radial-gradient(circle,#007884,transparent 65%)"></div>
+    <div class="blob" style="width:480px;height:480px;right:-140px;top:-40px;background:radial-gradient(circle,#0CA8B4,transparent 62%)"></div>
+  </div>
+  <div class="relative mx-auto max-w-4xl px-4 py-16 sm:py-20">
+    <p class="text-cyan-300 font-semibold tracking-wide uppercase text-sm">Legal</p>
+    <h1 class="mt-3 text-4xl sm:text-5xl font-bold tighten">Privacy <span class="grad-text">Policy</span></h1>
+    <p class="mt-5 max-w-2xl text-white/80 lead">This policy explains what personal information MS Security Systems Limited collects, how we use and protect it, and the rights you have under UK data protection law.</p>
+    <p class="mt-4 text-sm text-white/60">Last updated: 22 July 2026</p>
+  </div>
+</section>
+
+<!-- ===== BODY ===== -->
+<section class="mx-auto max-w-4xl px-4 py-14 sm:py-16">
+  <div class="grid lg:grid-cols-[220px_1fr] gap-10">
+
+    <!-- quick-jump contents -->
+    <aside class="lg:sticky lg:top-24 self-start reveal" aria-label="On this page">
+      <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">On this page</p>
+      <nav class="mt-3 flex flex-col gap-1.5 text-sm">
+        <a href="#who" class="text-slate-600 hover:text-teal-600">1. Who we are</a>
+        <a href="#collect" class="text-slate-600 hover:text-teal-600">2. Information we collect</a>
+        <a href="#use" class="text-slate-600 hover:text-teal-600">3. How &amp; why we use it</a>
+        <a href="#cookies" class="text-slate-600 hover:text-teal-600">4. Cookies &amp; analytics</a>
+        <a href="#share" class="text-slate-600 hover:text-teal-600">5. Who we share it with</a>
+        <a href="#transfers" class="text-slate-600 hover:text-teal-600">6. Data outside the UK</a>
+        <a href="#retention" class="text-slate-600 hover:text-teal-600">7. How long we keep it</a>
+        <a href="#security" class="text-slate-600 hover:text-teal-600">8. Keeping it secure</a>
+        <a href="#rights" class="text-slate-600 hover:text-teal-600">9. Your rights</a>
+        <a href="#changes" class="text-slate-600 hover:text-teal-600">10. Changes to this policy</a>
+        <a href="#contact" class="text-slate-600 hover:text-teal-600">11. Contact &amp; complaints</a>
+      </nav>
+    </aside>
+
+    <div class="prose max-w-none reveal">
+      <p class="!mt-0 text-slate-600 lead">MS Security Systems Limited (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) is committed to protecting your privacy. We handle your personal information in line with the <abbr title="UK General Data Protection Regulation">UK GDPR</abbr> and the <abbr title="Data Protection Act 2018">Data Protection Act 2018</abbr>. This policy tells you how.</p>
+
+      <section id="who">
+        <h2>1. Who we are</h2>
+        <p>MS Security Systems Limited is the &ldquo;data controller&rdquo; responsible for your personal information &mdash; this means we decide how and why it is used.</p>
+        <ul>
+          <li><strong>Company:</strong> MS Security Systems Limited, registered in England &amp; Wales, company number 16529092.</li>
+          <li><strong>Registered office:</strong> 36 Ouselaw, Gateshead, NE11 0TL.</li>
+          <li><strong>Email:</strong> <a href="mailto:steve@mssecurity.uk">steve@mssecurity.uk</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+447773822192">07773 822192</a></li>
+        </ul>
+        <p>If you have any questions about this policy or how we use your information, please contact us using the details above.</p>
+      </section>
+
+      <section id="collect">
+        <h2>2. The information we collect</h2>
+        <h3>Information you give us</h3>
+        <p>When you fill in our quote request form, email us, message us on WhatsApp or call us, we collect the details you choose to provide. Through our website quote form this typically includes:</p>
+        <ul>
+          <li>Your name;</li>
+          <li>Your phone number and email address;</li>
+          <li>Your address and postcode;</li>
+          <li>An indication of your budget and the service you are interested in;</li>
+          <li>Any other details you include in your message about the work you need.</li>
+        </ul>
+        <h3>Information we collect automatically</h3>
+        <p>When you visit this website, our hosting provider automatically records limited technical information &mdash; such as your <abbr title="Internet Protocol address: a number that identifies your device online">IP address</abbr>, browser type and the pages you view &mdash; in standard server logs. This helps us deliver the site securely and protect it against misuse. We do not use this information to identify you personally, and we do not combine it with your enquiry details.</p>
+      </section>
+
+      <section id="use">
+        <h2>3. How and why we use your information</h2>
+        <p>We only use your personal information for clear, limited purposes:</p>
+        <ul>
+          <li>To respond to your enquiry and provide a quotation;</li>
+          <li>To arrange and carry out a site survey, installation or repair;</li>
+          <li>To provide aftercare, maintenance and support;</li>
+          <li>To keep records of the work we have done and manage our accounts;</li>
+          <li>To comply with our legal and regulatory obligations.</li>
+        </ul>
+        <h3>Our lawful bases</h3>
+        <p>Data protection law requires us to have a &ldquo;lawful basis&rdquo; for using your information. Depending on the situation, we rely on:</p>
+        <ul>
+          <li><strong>Steps prior to a contract</strong> &mdash; where you ask us for a quote or to carry out work, we use your details to take those steps at your request;</li>
+          <li><strong>Legitimate interests</strong> &mdash; to respond to enquiries, run and improve our business, and keep proper records, in a way you would reasonably expect and that does not override your rights;</li>
+          <li><strong>Legal obligation</strong> &mdash; where we must keep certain records, for example for tax and accounting;</li>
+          <li><strong>Consent</strong> &mdash; where consent is needed, we will ask for it clearly, and you can withdraw it at any time.</li>
+        </ul>
+        <p>We will not send you marketing messages unless you have asked us to, and you can opt out at any time. This is in keeping with the <abbr title="Privacy and Electronic Communications Regulations 2003">PECR</abbr> rules on electronic marketing.</p>
+      </section>
+
+      <section id="cookies">
+        <h2>4. Cookies and analytics</h2>
+        <p>This website does not use cookies, advertising trackers or third-party analytics that follow you around the web. Because of this, no cookie consent banner is needed.</p>
+        <p>The fonts used to display the site&rsquo;s text are served from our own website rather than a third-party font service. The site is delivered through a hosting provider and a content delivery network, which may process limited technical data (such as your IP address) purely to serve the pages, as described in sections 2 and 6.</p>
+      </section>
+
+      <section id="share">
+        <h2>5. Who we share your information with</h2>
+        <p>We do <strong>not</strong> sell or rent your personal information to anyone. We only share it where necessary:</p>
+        <ul>
+          <li><strong>Our team</strong> &mdash; our engineers and staff, so they can survey, install, repair or support your system;</li>
+          <li><strong>Our website and form provider (Netlify)</strong> &mdash; which hosts this site and securely processes quote form submissions on our behalf;</li>
+          <li><strong>Professional advisers</strong> &mdash; such as our accountant, where needed to run the business;</li>
+          <li><strong>Authorities</strong> &mdash; where we are required to by law.</li>
+        </ul>
+        <p>Where another organisation processes information on our behalf, they act only on our instructions and are required to keep it secure.</p>
+      </section>
+
+      <section id="transfers">
+        <h2>6. Sending information outside the UK</h2>
+        <p>Some of the service providers we use (such as our website host and the content delivery network that helps deliver this site) may store or process data on servers outside the United Kingdom, including in the United States. Where information is transferred outside the UK, we rely on appropriate safeguards recognised under UK data protection law &mdash; such as the UK <abbr title="International Data Transfer Agreement">IDTA</abbr> or the UK Addendum to the EU Standard Contractual Clauses &mdash; so that your information continues to be protected.</p>
+      </section>
+
+      <section id="retention">
+        <h2>7. How long we keep your information</h2>
+        <p>We keep your personal information only for as long as we need it:</p>
+        <ul>
+          <li>If you make an enquiry but do not go ahead, we keep your details for a short period in case you come back to us, and then delete them.</li>
+          <li>If we carry out work for you, we keep records of the installation and related financial documents for up to six years, to meet our warranty, legal and accounting obligations.</li>
+        </ul>
+        <p>When information is no longer needed, we delete or securely destroy it.</p>
+      </section>
+
+      <section id="security">
+        <h2>8. Keeping your information secure</h2>
+        <p>We take appropriate measures to keep your information safe and to prevent it from being lost, misused or accessed without authorisation. Access is limited to those who need it to do their job or provide a service to you. While no method of transmission over the internet is completely secure, we work to protect your information at all times.</p>
+      </section>
+
+      <section id="rights">
+        <h2>9. Your data protection rights</h2>
+        <p>Under UK data protection law you have the right to:</p>
+        <ul>
+          <li><strong>Be informed</strong> about how we use your information &mdash; which is the purpose of this policy;</li>
+          <li><strong>Access</strong> a copy of the personal information we hold about you;</li>
+          <li><strong>Rectification</strong> &mdash; ask us to correct information that is inaccurate or incomplete;</li>
+          <li><strong>Erasure</strong> &mdash; ask us to delete your information in certain circumstances;</li>
+          <li><strong>Restrict or object</strong> to our use of your information in certain circumstances;</li>
+          <li><strong>Data portability</strong> &mdash; ask us to transfer your information to you or another provider;</li>
+          <li><strong>Withdraw consent</strong> at any time, where we rely on your consent.</li>
+        </ul>
+        <p>To exercise any of these rights, please email <a href="mailto:steve@mssecurity.uk">steve@mssecurity.uk</a>. We will respond within one month. Exercising your rights is free of charge.</p>
+      </section>
+
+      <section id="changes">
+        <h2>10. Changes to this policy</h2>
+        <p>We may update this policy from time to time to reflect changes in how we work or in the law. When we do, we will change the &ldquo;last updated&rdquo; date at the top of this page. Please check back occasionally.</p>
+      </section>
+
+      <section id="contact">
+        <h2>11. How to contact us &mdash; and how to complain</h2>
+        <p>If you have any questions, or would like to exercise your rights, contact us at <a href="mailto:steve@mssecurity.uk">steve@mssecurity.uk</a> or on <a href="tel:+447773822192">07773 822192</a>.</p>
+        <p>If you are unhappy with how we have handled your information, we would like the chance to put it right, so please contact us first. You also have the right to complain to the <abbr title="Information Commissioner's Office: the UK's independent data protection regulator">ICO</abbr>:</p>
+        <ul>
+          <li>Website: <a href="https://ico.org.uk/make-a-complaint/" target="_blank" rel="noopener">ico.org.uk/make-a-complaint</a></li>
+          <li>Helpline: 0303 123 1113</li>
+        </ul>
+      </section>
+
+      <div class="mt-12">
+        <a href="index.html#quote" class="btn inline-flex items-center gap-2 rounded-full bg-navy-600 text-white px-7 py-3.5 font-semibold shadow-glow hover:bg-navy-700">Request your free quote &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="bg-navy-900 text-white/70">
+  <div class="mx-auto max-w-7xl px-4 py-14 grid gap-10 md:grid-cols-[1.5fr_1fr_1fr_1.1fr]">
+    <div>
+      <div class="flex items-center gap-3">
+        <img src="brand_assets/ms_security_logo_mark.png" alt="MS Security Systems logo" class="h-14 w-auto" />
+        <span class="font-display font-bold leading-none">
+          <span class="block text-white text-xl tracking-tight">MS Security Systems</span>
+          <span class="block text-cyan-300 text-[11px] font-semibold tracking-[0.28em] mt-1.5">LIMITED &middot; NORTH EAST</span>
+        </span>
+      </div>
+      <p class="mt-5 max-w-sm text-sm lead">Professional alarms and CCTV, installed properly across the North East. Genuine equipment, tidy workmanship and aftercare you can rely on.</p>
+      <div class="mt-5 flex gap-3">
+        <a href="https://www.facebook.com/MSHomeSec" target="_blank" rel="noopener" class="w-11 h-11 rounded-full border border-white/15 grid place-items-center hover:border-cyan-300 hover:text-cyan-300 transition-colors" aria-label="Facebook"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615z"/></svg></a>
+        <a href="https://wa.me/447773822192" class="w-11 h-11 rounded-full border border-white/15 grid place-items-center hover:border-cyan-300 hover:text-cyan-300 transition-colors" aria-label="WhatsApp"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></a>
+        <a href="mailto:steve@mssecurity.uk" class="w-11 h-11 rounded-full border border-white/15 grid place-items-center hover:border-cyan-300 hover:text-cyan-300 transition-colors" aria-label="Email"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold">Our Security Services</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a href="index.html#services" class="hover:text-cyan-300">Intruder Alarm Systems</a></li>
+        <li><a href="index.html#services" class="hover:text-cyan-300">CCTV Systems</a></li>
+        <li><a href="index.html#services" class="hover:text-cyan-300">Smart Video Doorbells</a></li>
+        <li><a href="index.html#services" class="hover:text-cyan-300">4G and Microwave Links</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold">Explore</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a href="our-story.html" class="hover:text-cyan-300">About Us</a></li>
+        <li><a href="security-awareness.html" class="hover:text-cyan-300">Security Awareness</a></li>
+        <li><a href="community.html" class="hover:text-cyan-300">Community</a></li>
+        <li><a href="index.html#reviews" class="hover:text-cyan-300">Reviews</a></li>
+        <li><a href="index.html#quote" class="hover:text-cyan-300">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold">Get in touch</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a href="tel:+447773822192" class="inline-flex items-center gap-2 hover:text-cyan-300"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 07773 822192</a></li>
+        <li><a href="mailto:steve@mssecurity.uk" class="inline-flex items-center gap-2 hover:text-cyan-300"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> steve@mssecurity.uk</a></li>
+        <li class="pt-2 text-white/55">Serving homes and businesses across the North East</li>
+        <li class="text-white/55">Available Monday to Saturday, with flexible appointment times</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/60">
+      <p>&copy; <span id="yr"></span> MS Security Systems Limited &middot; Company No. 16529092 &middot; Registered in England &amp; Wales &middot; Reg. office: 36 Ouselaw, Gateshead, NE11 0TL.</p>
+      <p><a href="privacy.html" class="hover:text-cyan-300 underline underline-offset-2">Privacy Policy</a> &middot; Hikvision&reg;, Pyronix&reg;, Ajax&reg; and HKC&reg; are trademarks of their respective owners.</p>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top" class="opacity-0 pointer-events-none fixed bottom-5 left-5 lg:left-auto lg:right-5 z-40 btn rounded-full bg-navy-600 text-white w-12 h-12 grid place-items-center shadow-glow hover:bg-navy-700 transition-opacity duration-300"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></button>
+<a href="tel:+447773822192" class="lg:hidden fixed bottom-5 right-5 z-40 btn rounded-full bg-cyan-400 text-navy-900 w-14 h-14 grid place-items-center shadow-glow" aria-label="Call us"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const burger=document.getElementById('burger'), mobile=document.getElementById('mobile');
+  burger.addEventListener('click', ()=>mobile.classList.toggle('hidden'));
+  mobile.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>mobile.classList.add('hidden')));
+
+  // nav dropdowns (click/keyboard toggle; hover is handled in CSS)
+  document.querySelectorAll('.nav-group').forEach(group => {
+    const trigger = group.querySelector('.navtrigger');
+    if (!trigger) return;
+    const setOpen = on => { group.classList.toggle('open', on); trigger.setAttribute('aria-expanded', on ? 'true' : 'false'); };
+    trigger.addEventListener('click', () => setOpen(!group.classList.contains('open')));
+    group.addEventListener('keydown', e => { if (e.key === 'Escape') { setOpen(false); trigger.focus(); } });
+    group.addEventListener('focusout', e => { if (!group.contains(e.relatedTarget)) setOpen(false); });
+  });
+  document.addEventListener('click', e => {
+    document.querySelectorAll('.nav-group.open').forEach(g => {
+      if (!g.contains(e.target)) { g.classList.remove('open'); g.querySelector('.navtrigger').setAttribute('aria-expanded', 'false'); }
+    });
+  });
+
+  const nav=document.getElementById('nav'), toTop=document.getElementById('toTop');
+  addEventListener('scroll', ()=>{ nav.classList.toggle('shadow-card', scrollY>8); const s=scrollY>500; toTop.classList.toggle('opacity-0',!s); toTop.classList.toggle('pointer-events-none',!s); }, {passive:true});
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

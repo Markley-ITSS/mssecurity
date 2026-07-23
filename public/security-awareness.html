@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>document.documentElement.className += ' js';</script>
+<title>Security Awareness | MS Security Systems — Local crime & sensible protection</title>
+<meta name="description" content="Local crime, sensible protection. North East burglary and anti-social behaviour figures, plus practical steps to make your home, vehicle or business a harder target — from MS Security Systems." />
+<meta property="og:title" content="Security Awareness — MS Security Systems" />
+<meta property="og:type" content="website" />
+<link rel="icon" href="brand_assets/ms_security_logo_mark.png" />
+<link rel="preload" as="font" type="font/woff2" href="brand_assets/fonts/inter-var.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="brand_assets/fonts/space-grotesk-var.woff2" crossorigin />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { navy:{900:'#00121F',800:'#001C33',700:'#002B47',600:'#003C60',500:'#00486C'}, teal:{600:'#006C7A',500:'#007884',400:'#0CA8B4'}, cyan:{400:'#12BAC6',300:'#35D0DB'}, paper:'#F5F6F4', ink:'#0A1722' },
+  fontFamily: { display:['"Space Grotesk"','system-ui','sans-serif'], sans:['Inter','system-ui','sans-serif'] },
+  boxShadow: { glow:'0 0 0 1px rgba(18,186,198,.25), 0 18px 50px -12px rgba(0,120,132,.55)', card:'0 1px 2px rgba(0,28,51,.06), 0 18px 40px -20px rgba(0,60,96,.35)' }
+}}}
+</script>
+<style>
+  /* self-hosted fonts (SIL OFL) — served from our own domain, not a font CDN */
+  @font-face{ font-family:'Space Grotesk'; font-style:normal; font-weight:400 700; font-display:swap; src:url('brand_assets/fonts/space-grotesk-var.woff2') format('woff2'); }
+  @font-face{ font-family:'Inter'; font-style:normal; font-weight:400 700; font-display:swap; src:url('brand_assets/fonts/inter-var.woff2') format('woff2'); }
+  :root{ --ease:cubic-bezier(.16,1,.3,1); }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:Inter,system-ui,sans-serif; color:#0A1722; background:#F5F6F4; -webkit-font-smoothing:antialiased; }
+  h1,h2,h3,.font-display{ font-family:"Space Grotesk",system-ui,sans-serif; }
+  .tighten{ letter-spacing:-0.03em; } .lead{ line-height:1.7; }
+  .grain::before{ content:""; position:absolute; inset:0; pointer-events:none; opacity:.5; mix-blend-mode:overlay; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E"); }
+  .blob{ position:absolute; border-radius:50%; filter:blur(60px); opacity:.55; }
+  @keyframes drift{ 0%,100%{ transform:translate3d(0,0,0) scale(1);} 50%{ transform:translate3d(30px,-24px,0) scale(1.12);} }
+  .drift{ animation:drift 14s var(--ease) infinite; } .drift2{ animation:drift 18s var(--ease) infinite reverse; }
+  @keyframes pulse{ 0%{ box-shadow:0 0 0 0 rgba(53,208,219,.7);} 70%{ box-shadow:0 0 0 12px rgba(53,208,219,0);} 100%{ box-shadow:0 0 0 0 rgba(53,208,219,0);} }
+  .pulse{ animation:pulse 2.2s infinite; }
+  .js .reveal{ opacity:0; transform:translateY(22px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
+  .js .reveal.in{ opacity:1; transform:none; }
+  .grad-text{ background:linear-gradient(100deg,#35D0DB,#0CA8B4 40%,#12BAC6); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .navlink{ position:relative; } .navlink::after{ content:""; position:absolute; left:0; bottom:-4px; height:2px; width:0; background:#35D0DB; transition:width .3s var(--ease); } .navlink:hover::after,.navlink:focus-visible::after{ width:100%; }
+  .btn{ transition:transform .25s var(--ease), box-shadow .25s var(--ease), background-color .25s var(--ease); } .btn:hover{ transform:translateY(-2px); } .btn:active{ transform:translateY(0); }
+  .card-lift{ transition:transform .35s var(--ease), box-shadow .35s var(--ease); } .card-lift:hover{ transform:translateY(-6px); box-shadow:0 30px 60px -24px rgba(0,60,96,.5); }
+  :focus-visible{ outline:3px solid #12BAC6; outline-offset:3px; border-radius:6px; }
+  .chk{ position:relative; padding-left:1.9rem; }
+  .chk::before{ content:""; position:absolute; left:0; top:.15rem; width:1.15rem; height:1.15rem; border-radius:6px; background:#007884; -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/72% no-repeat; mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/72% no-repeat; }
+  @media (prefers-reduced-motion: reduce){ *{ animation:none !important; scroll-behavior:auto !important; } .js .reveal,.reveal{ opacity:1 !important; transform:none !important; transition:none !important; } }
+  /* nav dropdowns (disclosure pattern: hover for mouse, click/keyboard for the rest) */
+  .nav-group{ position:relative; }
+  .navtrigger{ display:inline-flex; align-items:center; gap:.28rem; cursor:pointer; background:none; border:0; padding:0; font:inherit; color:inherit; }
+  .navtrigger .chev{ transition:transform .25s var(--ease); }
+  .nav-group:hover .navtrigger .chev, .nav-group.open .navtrigger .chev{ transform:rotate(180deg); }
+  .dropmenu{ position:absolute; top:calc(100% + 12px); left:0; min-width:210px; background:#fff; border:1px solid rgba(0,28,51,.08); border-radius:14px; box-shadow:0 1px 2px rgba(0,28,51,.06), 0 18px 40px -20px rgba(0,60,96,.35); padding:.4rem; opacity:0; visibility:hidden; transform:translateY(6px); transition:opacity .2s var(--ease), transform .2s var(--ease), visibility .2s; z-index:60; }
+  .dropmenu::before{ content:""; position:absolute; left:0; right:0; top:-12px; height:12px; }
+  .nav-group:hover .dropmenu, .nav-group.open .dropmenu{ opacity:1; visibility:visible; transform:translateY(0); }
+  .dropmenu a{ display:block; padding:.55rem .8rem; border-radius:9px; font-size:.9rem; font-weight:500; color:#002B47; white-space:nowrap; }
+  .dropmenu a:hover, .dropmenu a:focus-visible{ background:#F5F6F4; color:#007884; }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- ===== TOP BAR ===== -->
+<div class="bg-navy-900 text-white/80 text-[13px]">
+  <div class="mx-auto max-w-7xl px-4 h-10 flex items-center justify-between">
+    <p class="hidden sm:flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-cyan-300 pulse"></span> Covering Tyne and Wear, Northumberland and County Durham</p>
+    <div class="flex items-center gap-4">
+      <a href="tel:+447773822192" class="inline-flex items-center gap-1.5 hover:text-cyan-300 transition-colors"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>07773 822192</a>
+      <a href="https://wa.me/447773822192" class="hidden sm:inline hover:text-cyan-300 transition-colors">WhatsApp</a>
+      <a href="mailto:steve@mssecurity.uk" class="hidden md:inline hover:text-cyan-300 transition-colors">steve@mssecurity.uk</a>
+    </div>
+  </div>
+</div>
+<!-- ===== NAV ===== -->
+<header id="nav" class="sticky top-0 z-50 transition-all duration-300 bg-white/85 backdrop-blur-lg border-b border-navy-900/10">
+  <div class="mx-auto max-w-7xl px-4 h-[72px] flex items-center justify-between gap-3">
+    <a href="index.html" class="flex items-center gap-2.5 shrink-0">
+      <img src="brand_assets/ms_security_logo_mark.png" alt="MS Security Systems logo" class="h-10 w-auto" />
+      <span class="font-display font-bold leading-none">
+        <span class="block text-navy-700 text-[14px] sm:text-[16px] tracking-tight">MS Security Systems</span>
+        <span class="block text-teal-500 text-[9px] sm:text-[10px] font-semibold tracking-[0.28em] mt-1">LIMITED</span>
+      </span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-x-6 text-[14px] font-medium text-navy-700">
+      <div class="nav-group">
+        <button type="button" class="navtrigger hover:text-teal-500 transition-colors" aria-expanded="false" aria-controls="about-menu">About
+          <svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div id="about-menu" class="dropmenu">
+          <a href="our-story.html">About Us</a>
+          <a href="index.html#why">Why Choose Us</a>
+          <a href="community.html">Community</a>
+        </div>
+      </div>
+      <a href="index.html#services" class="navlink hover:text-teal-500 transition-colors">Services</a>
+      <div class="nav-group">
+        <button type="button" class="navtrigger hover:text-teal-500 transition-colors" aria-expanded="false" aria-controls="work-menu">Our Work
+          <svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div id="work-menu" class="dropmenu">
+          <a href="index.html#gallery">Recent Work</a>
+          <a href="index.html#reviews">Reviews</a>
+          <a href="index.html#footage">Quality Systems</a>
+        </div>
+      </div>
+      <a href="security-awareness.html" class="navlink hover:text-teal-500 transition-colors text-teal-500">Awareness</a>
+      <a href="index.html#quote" class="navlink hover:text-teal-500 transition-colors">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="index.html#quote" class="btn hidden sm:inline-flex items-center gap-2 rounded-full bg-navy-600 text-white px-5 py-2.5 text-sm font-semibold shadow-glow hover:bg-navy-700">Free quote</a>
+      <button id="burger" aria-label="Open menu" class="lg:hidden p-2 text-navy-700"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <div id="mobile" class="lg:hidden hidden border-t border-navy-900/10 bg-white">
+    <nav class="px-4 py-3 flex flex-col text-navy-700 font-medium">
+      <a href="our-story.html" class="py-2.5 border-b border-navy-900/5">About Us</a>
+      <a href="index.html#why" class="py-2.5 border-b border-navy-900/5">Why Choose Us</a>
+      <a href="community.html" class="py-2.5 border-b border-navy-900/5">Community</a>
+      <a href="index.html#services" class="py-2.5 border-b border-navy-900/5">Services</a>
+      <a href="index.html#gallery" class="py-2.5 border-b border-navy-900/5">Recent Work</a>
+      <a href="index.html#reviews" class="py-2.5 border-b border-navy-900/5">Reviews</a>
+      <a href="index.html#footage" class="py-2.5 border-b border-navy-900/5">Quality Systems</a>
+      <a href="security-awareness.html" class="py-2.5 border-b border-navy-900/5">Security Awareness</a>
+      <a href="index.html#quote" class="mt-3 mb-1 text-center rounded-full bg-navy-600 text-white px-5 py-3 font-semibold">Contact / Free quote</a>
+    </nav>
+  </div>
+</header>
+
+
+<main id="top">
+<!-- HERO -->
+<section class="relative overflow-hidden bg-navy-900 text-white grain">
+  <div class="absolute inset-0">
+    <div class="blob drift" style="width:520px;height:520px;left:-120px;top:-140px;background:radial-gradient(circle,#007884,transparent 65%)"></div>
+    <div class="blob drift2" style="width:560px;height:560px;right:-160px;top:-60px;background:radial-gradient(circle,#0CA8B4,transparent 62%)"></div>
+  </div>
+  <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(0,18,31,.2),rgba(0,18,31,.85))"></div>
+  <div class="relative mx-auto max-w-3xl px-4 pt-14 pb-16 lg:pt-20 lg:pb-20 text-center">
+    <nav class="text-xs text-white/50 mb-5" aria-label="Breadcrumb"><a href="index.html" class="hover:text-cyan-300">Home</a> <span class="mx-1">/</span> <span class="text-white/80">Security Awareness</span></nav>
+    <span class="inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-1.5 text-[13px] font-medium text-cyan-300 backdrop-blur"><span class="w-2 h-2 rounded-full bg-cyan-300 pulse"></span> Security awareness</span>
+    <h1 class="mt-6 text-4xl sm:text-5xl font-bold tighten">Local crime. <span class="grad-text">Sensible protection.</span></h1>
+    <p class="mt-5 text-lg text-white/80 lead">The North East is a great place to live and work, but burglary and anti-social behaviour still affect thousands of homes and businesses every year.</p>
+  </div>
+</section>
+
+<!-- CRIME STATS -->
+<section class="relative py-20 lg:py-24">
+  <div class="mx-auto max-w-5xl px-4">
+    <div class="max-w-2xl reveal">
+      <p class="text-teal-500 font-semibold tracking-wide uppercase text-sm">Crime across the North East</p>
+      <h2 class="mt-3 text-3xl lg:text-4xl font-bold text-navy-800 tighten">The numbers behind the need.</h2>
+    </div>
+    <div class="mt-10 grid sm:grid-cols-2 gap-5">
+      <div class="reveal rounded-2xl bg-white p-7 shadow-card border border-navy-900/5">
+        <p class="text-xs font-semibold uppercase tracking-wide text-teal-500">Northumbria Police area · 12 months to Dec 2025</p>
+        <div class="mt-4 flex flex-wrap gap-x-10 gap-y-4">
+          <div><div class="text-4xl font-bold font-display text-navy-800">6,509</div><p class="text-sm text-slate-600 mt-1">burglaries recorded</p></div>
+          <div><div class="text-4xl font-bold font-display text-navy-800">29,038</div><p class="text-sm text-slate-600 mt-1">anti-social behaviour incidents</p></div>
+        </div>
+      </div>
+      <div class="reveal rounded-2xl bg-white p-7 shadow-card border border-navy-900/5">
+        <p class="text-xs font-semibold uppercase tracking-wide text-teal-500">Durham Constabulary area · 2024/25</p>
+        <div class="mt-4 flex flex-wrap gap-x-10 gap-y-4">
+          <div><div class="text-4xl font-bold font-display text-navy-800">12,889</div><p class="text-sm text-slate-600 mt-1">anti-social behaviour incidents</p></div>
+          <div><div class="text-4xl font-bold font-display text-navy-800">163</div><p class="text-sm text-slate-600 mt-1">business &amp; community burglaries (Oct–Dec 2025)</p></div>
+        </div>
+      </div>
+    </div>
+    <p class="mt-5 text-sm text-slate-600 reveal">Both anti-social behaviour figures had fallen compared with the previous year — but they still represent dozens of incidents every day, alongside continued residential burglary across local neighbourhoods.</p>
+    <!-- CRIME-STATS-SOURCE-NOTE --><p class="mt-2 text-xs text-slate-500 reveal">Burglary figures updated automatically on 22 July 2026 from the Home Office / ONS official <a href="https://www.gov.uk/government/statistical-data-sets/police-recorded-crime-and-outcomes-open-data-tables" class="underline hover:text-teal-500" target="_blank" rel="noopener">Police recorded crime open data</a> (Police Force Area tables; Northumbria 12 months to Dec 2025, Durham Oct–Dec 2025). Anti-social behaviour figures are sourced and dated separately and checked by hand, as no equivalent open dataset is currently published.</p><!-- /CRIME-STATS-SOURCE-NOTE -->
+  </div>
+</section>
+
+<!-- HARDER TARGET -->
+<section class="relative py-20 lg:py-24 bg-navy-900 text-white overflow-hidden grain">
+  <div class="absolute inset-0"><div class="blob drift2" style="width:520px;height:520px;right:-160px;top:10%;background:radial-gradient(circle,#007884,transparent 65%)"></div></div>
+  <div class="relative mx-auto max-w-5xl px-4">
+    <div class="max-w-2xl reveal">
+      <p class="text-cyan-300 font-semibold tracking-wide uppercase text-sm">Deter · detect · record</p>
+      <h2 class="mt-3 text-3xl lg:text-4xl font-bold tighten">Make your property the harder target.</h2>
+      <p class="mt-4 text-white/80 lead">Burglars and opportunistic criminals often look for the easiest, least protected property. A visible alarm bell box and professionally positioned CCTV cameras immediately show that your home or business is protected. An alarm detects and raises the alert; CCTV records people, vehicles and suspicious activity.</p>
+    </div>
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="reveal rounded-2xl bg-white/5 border border-white/10 p-6"><h3 class="font-semibold text-white">A strong visible deterrent</h3><p class="mt-2 text-sm text-white/70 lead">Signs, bell boxes and cameras make criminals think twice.</p></div>
+      <div class="reveal rounded-2xl bg-white/5 border border-white/10 p-6"><h3 class="font-semibold text-white">Early warning</h3><p class="mt-2 text-sm text-white/70 lead">Instant alerts the moment entry is attempted.</p></div>
+      <div class="reveal rounded-2xl bg-white/5 border border-white/10 p-6"><h3 class="font-semibold text-white">Recorded evidence</h3><p class="mt-2 text-sm text-white/70 lead">Clear footage for police or insurers.</p></div>
+      <div class="reveal rounded-2xl bg-white/5 border border-white/10 p-6"><h3 class="font-semibold text-white">Reassurance</h3><p class="mt-2 text-sm text-white/70 lead">Peace of mind whether you're home or away.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOMES/VEHICLES + ASB -->
+<section class="relative py-20 lg:py-24">
+  <div class="mx-auto max-w-5xl px-4 grid md:grid-cols-2 gap-8">
+    <div class="reveal">
+      <h2 class="text-2xl font-bold text-navy-800 tighten">Protecting homes and vehicles</h2>
+      <p class="mt-3 text-slate-600 lead">Many burglaries involve unlocked doors, weak access points or criminals entering a home to locate car keys. Vehicle crime can also involve people checking doors, targeting vans for tools or approaching keyless vehicles during the night. A properly installed alarm helps detect entry, while driveway CCTV can capture people, vehicles and the direction they travel.</p>
+    </div>
+    <div class="reveal">
+      <h2 class="text-2xl font-bold text-navy-800 tighten">Anti-social behaviour &amp; vandalism</h2>
+      <p class="mt-3 text-slate-600 lead">CCTV can also help with repeated nuisance, trespassing, vandalism and anti-social behaviour. It lets you see what's happening without confronting anyone, and provides a clear record of dates, times, people and vehicles.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DETERRENCE CTA -->
+<section class="relative py-16 lg:py-20 bg-paper">
+  <div class="mx-auto max-w-3xl px-4 text-center reveal">
+    <p class="text-teal-500 font-semibold tracking-wide uppercase text-sm">Deterrence. Detection. Evidence.</p>
+    <h2 class="mt-3 text-3xl font-bold text-navy-800 tighten">A harder, riskier, less attractive target.</h2>
+    <p class="mt-4 text-slate-600 lead">No security system can guarantee that crime will never happen. But a visible alarm and quality CCTV can make your property far less appealing to criminals. At MS Security Systems, we recommend the protection your property genuinely needs — without scare tactics, unnecessary equipment or pressure.</p>
+    <a href="index.html#quote" class="btn mt-7 inline-flex items-center gap-2 rounded-full bg-navy-600 text-white px-7 py-3.5 font-semibold shadow-glow hover:bg-navy-700">Arrange your free security survey →</a>
+  </div>
+</section>
+
+<!-- SIMPLE STEPS -->
+<section class="relative py-20 lg:py-24">
+  <div class="mx-auto max-w-6xl px-4">
+    <div class="max-w-2xl reveal">
+      <p class="text-teal-500 font-semibold tracking-wide uppercase text-sm">Practical advice</p>
+      <h2 class="mt-3 text-3xl lg:text-4xl font-bold text-navy-800 tighten">Simple steps that make a real difference.</h2>
+      <p class="mt-4 text-slate-600 lead">Good security isn't just about alarms and CCTV. Small changes can make your home or business much less attractive to opportunistic criminals.</p>
+    </div>
+    <div class="mt-10 grid lg:grid-cols-3 gap-5">
+      <div class="reveal rounded-2xl bg-white p-7 shadow-card border border-navy-900/5">
+        <h3 class="text-lg font-semibold text-navy-800">At home</h3>
+        <ul class="mt-4 space-y-2.5 text-[15px] text-slate-600 lead">
+          <li class="chk">Keep car and house keys away from doors, windows and letterboxes.</li>
+          <li class="chk">Store keyless car keys in a tested Faraday pouch or signal-blocking box.</li>
+          <li class="chk">Keep jewellery, cash, laptops and valuables out of sight.</li>
+          <li class="chk">Don't leave packaging for expensive items out with the recycling.</li>
+          <li class="chk">Lock doors and windows, even at home or when popping out.</li>
+          <li class="chk">Keep side gates, sheds and garages locked.</li>
+          <li class="chk">Don't leave ladders, tools or bins where they could help access.</li>
+          <li class="chk">Use timer lights when the property is empty.</li>
+          <li class="chk">Avoid advertising holidays or absences on social media.</li>
+          <li class="chk">Consider security lighting around entrances and driveways.</li>
+          <li class="chk">Check CCTV is clean, recording and showing the correct date/time.</li>
+          <li class="chk">Set your alarm when you leave — use part-set at night if available.</li>
+        </ul>
+      </div>
+      <div class="reveal rounded-2xl bg-white p-7 shadow-card border border-navy-900/5">
+        <h3 class="text-lg font-semibold text-navy-800">Protecting vehicles</h3>
+        <ul class="mt-4 space-y-2.5 text-[15px] text-slate-600 lead">
+          <li class="chk">Remove bags, tools, loose change and electronics from view.</li>
+          <li class="chk">Lock the vehicle and check it manually before walking away.</li>
+          <li class="chk">Keep keys well away from the front door.</li>
+          <li class="chk">Use a steering-wheel lock as a visible deterrent.</li>
+          <li class="chk">Park in a well-lit area covered by CCTV where possible.</li>
+          <li class="chk">For work vans, add extra locks and remove valuable tools overnight.</li>
+        </ul>
+      </div>
+      <div class="reveal rounded-2xl bg-white p-7 shadow-card border border-navy-900/5">
+        <h3 class="text-lg font-semibold text-navy-800">For businesses</h3>
+        <ul class="mt-4 space-y-2.5 text-[15px] text-slate-600 lead">
+          <li class="chk">Keep high-value stock away from windows and public view.</li>
+          <li class="chk">Limit access to offices, stockrooms and staff-only areas.</li>
+          <li class="chk">Store cash securely; avoid leaving money on-site overnight.</li>
+          <li class="chk">Change alarm codes when employees leave.</li>
+          <li class="chk">Give each authorised user their own alarm code.</li>
+          <li class="chk">Secure external doors, shutters and emergency exits properly.</li>
+          <li class="chk">Cover entrances, yards, car parks and delivery areas with CCTV.</li>
+          <li class="chk">Regularly check cameras record clearly, day and night.</li>
+          <li class="chk">Keep shrubs, displays and bins from blocking camera views.</li>
+          <li class="chk">Display alarm and CCTV warning signs clearly.</li>
+          <li class="chk">Report repeated suspicious behaviour early.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYERS -->
+<section class="relative py-20 lg:py-24 bg-navy-900 text-white overflow-hidden grain">
+  <div class="absolute inset-0"><div class="blob drift" style="width:480px;height:480px;left:-140px;bottom:-160px;background:radial-gradient(circle,#0CA8B4,transparent 64%)"></div></div>
+  <div class="relative mx-auto max-w-3xl px-4 text-center reveal">
+    <p class="text-cyan-300 font-semibold tracking-wide uppercase text-sm">Layered protection</p>
+    <h2 class="mt-3 text-3xl lg:text-4xl font-bold tighten">Security works best in layers.</h2>
+    <p class="mt-4 text-white/80 lead">Strong locks slow an intruder down. Lighting and visible cameras increase the chance of being seen. An alarm raises the alert, while CCTV records what happened. The strongest protection comes from combining sensible everyday precautions with a professionally installed alarm and CCTV system.</p>
+    <a href="index.html#quote" class="btn mt-7 inline-flex items-center gap-2 rounded-full bg-cyan-400 text-navy-900 px-7 py-3.5 font-semibold shadow-glow hover:bg-cyan-300">Get your free security survey →</a>
+  </div>
+</section>
+</main>
+
+<footer class="bg-navy-900 text-white/70">
+  <div class="mx-auto max-w-7xl px-4 py-14 grid gap-10 md:grid-cols-[1.5fr_1fr_1fr_1.1fr]">
+    <div>
+      <div class="flex items-center gap-3">
+        <img src="brand_assets/ms_security_logo_mark.png" alt="MS Security Systems logo" class="h-14 w-auto" />
+        <span class="font-display font-bold leading-none">
+          <span class="block text-white text-xl tracking-tight">MS Security Systems</span>
+          <span class="block text-cyan-300 text-[11px] font-semibold tracking-[0.28em] mt-1.5">LIMITED · NORTH EAST</span>
+        </span>
+      </div>
+      <p class="mt-5 max-w-sm text-sm lead">Professional alarms and CCTV, installed properly across the North East. Genuine equipment, tidy workmanship and aftercare you can rely on.</p>
+      <div class="mt-5 flex gap-3">
+        <a href="https://www.facebook.com/MSHomeSec" target="_blank" rel="noopener" class="w-11 h-11 rounded-full border border-white/15 grid place-items-center hover:border-cyan-300 hover:text-cyan-300 transition-colors" aria-label="Facebook"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615z"/></svg></a>
+        <a href="https://wa.me/447773822192" class="w-11 h-11 rounded-full border border-white/15 grid place-items-center hover:border-cyan-300 hover:text-cyan-300 transition-colors" aria-label="WhatsApp"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></a>
+        <a href="mailto:steve@mssecurity.uk" class="w-11 h-11 rounded-full border border-white/15 grid place-items-center hover:border-cyan-300 hover:text-cyan-300 transition-colors" aria-label="Email"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold">Our Security Services</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a href="index.html#services" class="hover:text-cyan-300">Intruder Alarm Systems</a></li>
+        <li><a href="index.html#services" class="hover:text-cyan-300">CCTV Systems</a></li>
+        <li><a href="index.html#services" class="hover:text-cyan-300">Smart Video Doorbells</a></li>
+        <li><a href="index.html#services" class="hover:text-cyan-300">4G and Microwave Links</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold">Explore</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a href="our-story.html" class="hover:text-cyan-300">About Us</a></li>
+        <li><a href="security-awareness.html" class="hover:text-cyan-300">Security Awareness</a></li>
+        <li><a href="community.html" class="hover:text-cyan-300">Community</a></li>
+        <li><a href="index.html#reviews" class="hover:text-cyan-300">Reviews</a></li>
+        <li><a href="index.html#quote" class="hover:text-cyan-300">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold">Get in touch</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a href="tel:+447773822192" class="inline-flex items-center gap-2 hover:text-cyan-300"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 07773 822192</a></li>
+        <li><a href="mailto:steve@mssecurity.uk" class="inline-flex items-center gap-2 hover:text-cyan-300"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> steve@mssecurity.uk</a></li>
+        <li class="pt-2 text-white/55">Serving homes and businesses across the North East</li>
+        <li class="text-white/55">Available Monday to Saturday, with flexible appointment times</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/60">
+      <p>&copy; <span id="yr"></span> MS Security Systems Limited &middot; Company No. 16529092 &middot; Registered in England &amp; Wales &middot; Reg. office: 36 Ouselaw, Gateshead, NE11 0TL.</p>
+      <p><a href="privacy.html" class="hover:text-cyan-300 underline underline-offset-2">Privacy Policy</a> &middot; Hikvision&reg;, Pyronix&reg;, Ajax&reg; and HKC&reg; are trademarks of their respective owners. MS Security Systems Limited is an independent installer.</p>
+    </div>
+  </div>
+</footer>
+
+
+<button id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top" class="opacity-0 pointer-events-none fixed bottom-5 left-5 lg:left-auto lg:right-5 z-40 btn rounded-full bg-navy-600 text-white w-12 h-12 grid place-items-center shadow-glow hover:bg-navy-700 transition-opacity duration-300"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></button>
+<a href="tel:+447773822192" class="lg:hidden fixed bottom-5 right-5 z-40 btn rounded-full bg-cyan-400 text-navy-900 w-14 h-14 grid place-items-center shadow-glow" aria-label="Call us"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const burger=document.getElementById('burger'), mobile=document.getElementById('mobile');
+  burger.addEventListener('click', ()=>mobile.classList.toggle('hidden'));
+  mobile.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>mobile.classList.add('hidden')));
+
+  // nav dropdowns (click/keyboard toggle; hover is handled in CSS)
+  document.querySelectorAll('.nav-group').forEach(group => {
+    const trigger = group.querySelector('.navtrigger');
+    if (!trigger) return;
+    const setOpen = on => { group.classList.toggle('open', on); trigger.setAttribute('aria-expanded', on ? 'true' : 'false'); };
+    trigger.addEventListener('click', () => setOpen(!group.classList.contains('open')));
+    group.addEventListener('keydown', e => { if (e.key === 'Escape') { setOpen(false); trigger.focus(); } });
+    group.addEventListener('focusout', e => { if (!group.contains(e.relatedTarget)) setOpen(false); });
+  });
+  document.addEventListener('click', e => {
+    document.querySelectorAll('.nav-group.open').forEach(g => {
+      if (!g.contains(e.target)) { g.classList.remove('open'); g.querySelector('.navtrigger').setAttribute('aria-expanded', 'false'); }
+    });
+  });
+
+  const nav=document.getElementById('nav'), toTop=document.getElementById('toTop');
+  addEventListener('scroll', ()=>{ nav.classList.toggle('shadow-card', scrollY>8); const s=scrollY>500; toTop.classList.toggle('opacity-0',!s); toTop.classList.toggle('pointer-events-none',!s); }, {passive:true});
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

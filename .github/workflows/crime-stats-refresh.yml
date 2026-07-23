@@ -1,11 +1,14 @@
 name: Quarterly crime stats refresh
 
 on:
-  schedule:
-    # 27th Jan/Oct at 09:00 Europe/London (GMT, UTC+0)
-    - cron: "0 9 27 1,10 *"
-    # 27th Apr/Jul at 09:00 Europe/London (BST, UTC+1)
-    - cron: "0 8 27 4,7 *"
+  # Schedule disabled for now -- GOV.UK's file server appears to
+  # silently stall/block requests from GitHub's cloud IP ranges, so
+  # this hasn't run successfully yet. The existing local Windows Task
+  # Scheduler job is the real automation for this. Left as a manual
+  # button (workflow_dispatch) in case it's worth retrying later.
+  # schedule:
+  #   - cron: "0 9 27 1,10 *"   # 27th Jan/Oct 09:00 Europe/London (GMT)
+  #   - cron: "0 8 27 4,7 *"    # 27th Apr/Jul 09:00 Europe/London (BST)
   workflow_dispatch: {}
 
 permissions:

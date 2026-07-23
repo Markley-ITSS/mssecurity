@@ -1,0 +1,43 @@
+name: Quarterly crime stats refresh
+
+on:
+  schedule:
+    # 27th Jan/Oct at 09:00 Europe/London (GMT, UTC+0)
+    - cron: "0 9 27 1,10 *"
+    # 27th Apr/Jul at 09:00 Europe/London (BST, UTC+1)
+    - cron: "0 8 27 4,7 *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install --quiet pandas odfpy
+
+      - name: Refresh burglary figures from ONS
+        run: python scripts/update_crime_stats.py --apply --refresh-download
+
+      - name: Sync public/ publish directory
+        run: python scripts/sync_public.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add security-awareness.html public/
+          if git diff --cached --quiet; then
+            echo "No changes -- ONS hasn't published newer data since last run."
+            exit 0
+          fi
+          git commit -m "Quarterly crime stats refresh (automated)"
+          git push

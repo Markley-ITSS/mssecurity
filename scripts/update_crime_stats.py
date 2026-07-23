@@ -17,12 +17,47 @@ Without --apply it just prints what it found (dry run). With --apply it
 rewrites the burglary numbers + "data as of" line in security-awareness.html.
 """
 import argparse
+import concurrent.futures
 import datetime
 import re
 import shutil
 import sys
 import urllib.request
 from pathlib import Path
+
+# Hard wall-clock deadline for network calls, enforced in a worker thread.
+# Belt-and-braces on top of the per-socket REQUEST_TIMEOUT below: DNS
+# lookups, redirect chains, and multi-address (happy-eyeballs-style)
+# connection attempts can each reset or bypass a plain socket timeout, so a
+# genuinely blocked/tarpitted host can still hang far longer than expected.
+# This guarantees a clear, fast failure instead of running until whatever
+# is running the script (a CI runner, Task Scheduler, ...) kills it itself
+# with no diagnostic.
+NETWORK_DEADLINE = 90
+
+
+def _with_deadline(fn, *args, **kwargs):
+    # A plain socket timeout can be bypassed by DNS lookups, redirect chains,
+    # or multi-address connection retries, each of which can reset or ignore
+    # it -- so this also can't just join() the worker thread on timeout
+    # (Python threads can't be killed, and CPython's interpreter-exit
+    # machinery waits for non-daemon threads regardless). If the deadline
+    # is blown, hard-exit the whole process rather than hang waiting for a
+    # thread that may never return -- this is a short CLI script meant to
+    # fail fast under automation, not a long-lived service.
+    import os
+
+    pool = concurrent.futures.ThreadPoolExecutor(max_workers=1)
+    future = pool.submit(fn, *args, **kwargs)
+    try:
+        return future.result(timeout=NETWORK_DEADLINE)
+    except concurrent.futures.TimeoutError:
+        print(
+            f"ERROR: network call did not complete within {NETWORK_DEADLINE}s -- "
+            "the source host may be blocking/stalling requests from this network.",
+            file=sys.stderr,
+        )
+        os._exit(1)
 
 ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / "scripts" / ".cache"
@@ -55,16 +90,26 @@ REQUEST_TIMEOUT = 30
 REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; MSSecurityCrimeStatsBot/1.0)"}
 
 
+def _fetch_listing_html() -> str:
+    req = urllib.request.Request(SOURCE_LISTING_URL, headers=REQUEST_HEADERS)
+    with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
+        return resp.read().decode("utf-8", "ignore")
+
+
 def find_ods_url() -> str:
     import re as _re
 
-    req = urllib.request.Request(SOURCE_LISTING_URL, headers=REQUEST_HEADERS)
-    with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
-        html = resp.read().decode("utf-8", "ignore")
+    html = _with_deadline(_fetch_listing_html)
     m = _re.search(r'href="(https://assets\.publishing\.service\.gov\.uk/media/[^"]*prc-pfa-mar2013-onwards[^"]*\.ods)"', html)
     if not m:
         raise RuntimeError("Could not find the PFA .ods download link on the GOV.UK page")
     return m.group(1)
+
+
+def _fetch_ods(url: str) -> None:
+    req = urllib.request.Request(url, headers=REQUEST_HEADERS)
+    with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp, open(ODS_PATH, "wb") as out:
+        shutil.copyfileobj(resp, out)
 
 
 def download_ods(force: bool = False) -> Path:
@@ -72,9 +117,7 @@ def download_ods(force: bool = False) -> Path:
         return ODS_PATH
     url = find_ods_url()
     print(f"Downloading {url}")
-    req = urllib.request.Request(url, headers=REQUEST_HEADERS)
-    with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp, open(ODS_PATH, "wb") as out:
-        shutil.copyfileobj(resp, out)
+    _with_deadline(_fetch_ods, url)
     return ODS_PATH
 
 

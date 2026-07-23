@@ -19,6 +19,7 @@ rewrites the burglary numbers + "data as of" line in security-awareness.html.
 import argparse
 import datetime
 import re
+import shutil
 import sys
 import urllib.request
 from pathlib import Path
@@ -45,10 +46,20 @@ FORCE_STATS = {
 Q_MONTHS = {1: (4, 6), 2: (7, 9), 3: (10, 12), 4: (1, 3)}
 
 
+REQUEST_TIMEOUT = 30
+# GOV.UK / Home Office asset hosts have been observed stalling or silently
+# blocking requests with no User-Agent, especially from datacenter/CI IPs
+# (Azure, etc.) -- a browser-like UA avoids that; the timeout ensures a
+# hung connection fails loudly instead of running until the CI runner
+# itself kills the job with no diagnostic output.
+REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; MSSecurityCrimeStatsBot/1.0)"}
+
+
 def find_ods_url() -> str:
     import re as _re
 
-    with urllib.request.urlopen(SOURCE_LISTING_URL) as resp:
+    req = urllib.request.Request(SOURCE_LISTING_URL, headers=REQUEST_HEADERS)
+    with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
         html = resp.read().decode("utf-8", "ignore")
     m = _re.search(r'href="(https://assets\.publishing\.service\.gov\.uk/media/[^"]*prc-pfa-mar2013-onwards[^"]*\.ods)"', html)
     if not m:
@@ -61,7 +72,9 @@ def download_ods(force: bool = False) -> Path:
         return ODS_PATH
     url = find_ods_url()
     print(f"Downloading {url}")
-    urllib.request.urlretrieve(url, ODS_PATH)
+    req = urllib.request.Request(url, headers=REQUEST_HEADERS)
+    with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp, open(ODS_PATH, "wb") as out:
+        shutil.copyfileobj(resp, out)
     return ODS_PATH
 
 

@@ -11,9 +11,18 @@ on:
 permissions:
   contents: write
 
+env:
+  # Python fully buffers stdout when it isn't a TTY, so without this a
+  # hosted-runner job can sit with zero visible log output for a long
+  # time even while genuinely working (e.g. odfpy is a slow pure-Python
+  # ODS parser) -- which both hides real progress and risks tripping
+  # GitHub's own "no output" stall-detection on the job.
+  PYTHONUNBUFFERED: "1"
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 

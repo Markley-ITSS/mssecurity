@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>document.documentElement.className += ' js';</script>
+<title>Community Involvement | MS Security Systems Ltd — Backing North East grassroots football</title>
+<meta name="description" content="MS Security Systems is proud to support grassroots football across the North East — sponsoring local teams and young players across Tyneside, Durham and Northumberland." />
+<meta property="og:title" content="Community Involvement — MS Security Systems Ltd" />
+<meta property="og:description" content="Proud sponsors of local football teams and players across the North East." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="brand_assets/ms_security_logo_mark.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        navy: { 900:'#00121F', 800:'#001C33', 700:'#002B47', 600:'#003C60', 500:'#00486C' },
+        teal: { 600:'#006C7A', 500:'#007884', 400:'#0CA8B4' },
+        cyan: { 400:'#12BAC6', 300:'#35D0DB' },
+        paper: '#F5F6F4', ink: '#0A1722'
+      },
+      fontFamily: {
+        display: ['"Space Grotesk"','system-ui','sans-serif'],
+        sans: ['Inter','system-ui','sans-serif']
+      },
+      boxShadow: {
+        glow: '0 0 0 1px rgba(18,186,198,.25), 0 18px 50px -12px rgba(0,120,132,.55)',
+        card: '0 1px 2px rgba(0,28,51,.06), 0 18px 40px -20px rgba(0,60,96,.35)'
+      }
+    }
+  }
+}
+</script>
+<style>
+  :root{ --ease:cubic-bezier(.16,1,.3,1); }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:Inter,system-ui,sans-serif; color:#0A1722; background:#F5F6F4; -webkit-font-smoothing:antialiased; }
+  h1,h2,h3,.font-display{ font-family:"Space Grotesk",system-ui,sans-serif; }
+  .tighten{ letter-spacing:-0.03em; }
+  .lead{ line-height:1.7; }
+  .grain::before{
+    content:""; position:absolute; inset:0; pointer-events:none; opacity:.5; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+  }
+  .blob{ position:absolute; border-radius:50%; filter:blur(60px); opacity:.55; will-change:transform; }
+  @keyframes drift{ 0%,100%{ transform:translate3d(0,0,0) scale(1);} 50%{ transform:translate3d(30px,-24px,0) scale(1.12);} }
+  .drift{ animation:drift 14s var(--ease) infinite; }
+  .drift2{ animation:drift 18s var(--ease) infinite reverse; }
+  @keyframes pulse{ 0%{ box-shadow:0 0 0 0 rgba(53,208,219,.7);} 70%{ box-shadow:0 0 0 12px rgba(53,208,219,0);} 100%{ box-shadow:0 0 0 0 rgba(53,208,219,0);} }
+  .pulse{ animation:pulse 2.2s infinite; }
+  .js .reveal{ opacity:0; transform:translateY(22px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
+  .js .reveal.in{ opacity:1; transform:none; }
+  .grad-text{ background:linear-gradient(100deg,#35D0DB,#0CA8B4 40%,#12BAC6); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .navlink{ position:relative; }
+  .navlink::after{ content:""; position:absolute; left:0; bottom:-4px; height:2px; width:0; background:#35D0DB; transition:width .3s var(--ease); }
+  .navlink:hover::after,.navlink:focus-visible::after{ width:100%; }
+  .btn{ transition:transform .25s var(--ease), box-shadow .25s var(--ease), background-color .25s var(--ease); }
+  .btn:hover{ transform:translateY(-2px); }
+  .btn:active{ transform:translateY(0); }
+  .card-lift{ transition:transform .35s var(--ease), box-shadow .35s var(--ease); }
+  .card-lift:hover{ transform:translateY(-6px); box-shadow:0 30px 60px -24px rgba(0,60,96,.5); }
+  .shot img{ transition:transform .6s var(--ease); }
+  .shot:hover img{ transform:scale(1.08); }
+  :focus-visible{ outline:3px solid #12BAC6; outline-offset:3px; border-radius:6px; }
+  @media (prefers-reduced-motion: reduce){
+    *{ animation:none !important; scroll-behavior:auto !important; }
+    .js .reveal, .reveal{ opacity:1 !important; transform:none !important; transition:none !important; }
+  }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- ===== TOP BAR ===== -->
+<div class="bg-navy-900 text-white/80 text-[13px]">
+  <div class="mx-auto max-w-7xl px-4 h-10 flex items-center justify-between">
+    <p class="hidden sm:flex items-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-cyan-300 pulse"></span>
+      Covering Newcastle · Gateshead · Sunderland · Durham · Northumberland
+    </p>
+    <div class="flex items-center gap-4">
+      <a href="tel:+447773822192" class="inline-flex items-center gap-1.5 hover:text-cyan-300 transition-colors"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>07773 822192</a>
+      <a href="https://wa.me/447773822192" class="hidden sm:inline hover:text-cyan-300 transition-colors">WhatsApp</a>
+      <a href="mailto:steve@mssecurity.uk" class="hidden md:inline hover:text-cyan-300 transition-colors">steve@mssecurity.uk</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== NAV ===== -->
+<header id="nav" class="sticky top-0 z-50 transition-all duration-300 bg-white/85 backdrop-blur-lg border-b border-navy-900/10">
+  <div class="mx-auto max-w-7xl px-4 h-[72px] flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-2.5 shrink-0">
+      <img src="brand_assets/ms_security_logo_mark.png" alt="MS Security Systems logo" class="h-11 w-auto" />
+      <span class="font-display font-bold leading-none">
+        <span class="block text-navy-700 text-[15px] sm:text-[17px] tracking-tight">MS Security Systems</span>
+        <span class="block text-teal-500 text-[10px] sm:text-[11px] font-semibold tracking-[0.3em] mt-1">LTD</span>
+      </span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-navy-700">
+      <a href="index.html#services" class="navlink hover:text-teal-500 transition-colors">Services</a>
+      <a href="index.html#footage" class="navlink hover:text-teal-500 transition-colors">See the quality</a>
+      <a href="index.html#gallery" class="navlink hover:text-teal-500 transition-colors">Recent work</a>
+      <a href="index.html#reviews" class="navlink hover:text-teal-500 transition-colors">Reviews</a>
+      <a href="community.html" class="navlink text-teal-500" aria-current="page">Community</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="tel:+447773822192" class="hidden sm:inline-flex items-center gap-2 text-navy-700 font-semibold hover:text-teal-500 transition-colors">
+        <svg aria-hidden="true" class="text-teal-500" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 07773 822192
+      </a>
+      <a href="index.html#quote" class="btn hidden sm:inline-flex items-center gap-2 rounded-full bg-navy-600 text-white px-5 py-2.5 text-sm font-semibold shadow-glow hover:bg-navy-700">Free quote</a>
+      <button id="burger" aria-label="Open menu" class="lg:hidden p-2 text-navy-700">
+        <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile" class="lg:hidden hidden border-t border-navy-900/10 bg-white">
+    <nav class="px-4 py-3 flex flex-col text-navy-700 font-medium">
+      <a href="index.html#services" class="py-2.5 border-b border-navy-900/5">Services</a>
+      <a href="index.html#footage" class="py-2.5 border-b border-navy-900/5">See the quality</a>
+      <a href="index.html#gallery" class="py-2.5 border-b border-navy-900/5">Recent work</a>
+      <a href="index.html#reviews" class="py-2.5 border-b border-navy-900/5">Reviews</a>
+      <a href="community.html" class="py-2.5 border-b border-navy-900/5 text-teal-500" aria-current="page">Community</a>
+      <a href="index.html#quote" class="mt-3 mb-1 text-center rounded-full bg-navy-600 text-white px-5 py-3 font-semibold">Get my free quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===== HERO ===== -->
+<section class="relative overflow-hidden bg-navy-900 text-white grain">
+  <div class="absolute inset-0">
+    <div class="blob drift" style="width:520px;height:520px;left:-120px;top:-140px;background:radial-gradient(circle,#007884,transparent 65%)"></div>
+    <div class="blob drift2" style="width:560px;height:560px;right:-160px;top:-60px;background:radial-gradient(circle,#0CA8B4,transparent 62%)"></div>
+  </div>
+  <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(0,18,31,.2),rgba(0,18,31,.85))"></div>
+
+  <div class="relative mx-auto max-w-7xl px-4 pt-14 pb-20 lg:pt-20 lg:pb-24 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <nav class="text-xs text-white/50 mb-5" aria-label="Breadcrumb">
+        <a href="index.html" class="hover:text-cyan-300">Home</a> <span class="mx-1">/</span> <span class="text-white/80">Community</span>
+      </nav>
+      <span class="inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-1.5 text-[13px] font-medium text-cyan-300 backdrop-blur">
+        <span class="w-2 h-2 rounded-full bg-cyan-300 pulse"></span>
+        Community &amp; grassroots
+      </span>
+      <h1 class="mt-6 text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.05] font-bold tighten">
+        More than security — <span class="grad-text">part of the community.</span>
+      </h1>
+      <p class="mt-5 max-w-xl text-lg text-white/80 lead">
+        The North East is where we live, work and raise our families — so giving something back matters to us.
+        MS Security Systems is a proud <b class="text-white">player sponsor at Whickham FC</b> and a supporter of
+        grassroots football and young players across Tyneside, Durham and Northumberland.
+      </p>
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <a href="#sponsorship" class="btn inline-flex items-center gap-2 rounded-full bg-cyan-400 text-navy-900 px-7 py-3.5 font-semibold shadow-glow hover:bg-cyan-300">Looking for a sponsor? →</a>
+        <a href="https://www.facebook.com/MSHomeSec" target="_blank" rel="noopener" class="btn inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-7 py-3.5 font-semibold text-white hover:bg-white/10 backdrop-blur">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615z"/></svg> See it on Facebook
+        </a>
+      </div>
+    </div>
+
+    <div class="relative reveal mx-auto w-full max-w-sm">
+      <div class="rounded-3xl border border-white/10 bg-navy-800/60 backdrop-blur-xl p-2.5 shadow-2xl">
+        <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+          <img src="brand_assets/community/sponsor-mason-whickham.jpg" alt="Player-sponsor graphic: Mason Hardy of Whickham FC, proudly sponsored by MS Security" class="w-full h-full object-cover" />
+        </div>
+      </div>
+      <div class="mt-3 flex items-center gap-3 text-xs text-white/60">
+        <span class="inline-block w-2 h-2 rounded-full bg-cyan-300 pulse"></span>
+        Proud player sponsor — Mason Hardy, Whickham FC.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY / VALUES ===== -->
+<section class="relative py-20 lg:py-28">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="max-w-2xl reveal">
+      <p class="text-teal-500 font-semibold tracking-wide uppercase text-sm">Why we get involved</p>
+      <h2 class="mt-3 text-3xl lg:text-4xl font-bold text-navy-800 tighten">Local business, local roots.</h2>
+      <p class="mt-4 text-slate-600 lead">Grassroots clubs are the heart of our towns and villages — giving kids somewhere to belong, keeping them active, and bringing communities together every weekend. As a family-run North East business, we're proud to help those clubs keep going.</p>
+    </div>
+
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <article class="card-lift reveal rounded-2xl bg-white p-7 shadow-card border border-navy-900/5">
+        <div class="w-12 h-12 rounded-xl grid place-items-center bg-teal-500/10 text-teal-500"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="m12 6 2.5 3.5L18 12l-3.5 2.5L12 18l-2.5-3.5L6 12l3.5-2.5z"/></svg></div>
+        <h3 class="mt-5 text-xl font-semibold text-navy-800">Team &amp; kit sponsorship</h3>
+        <p class="mt-2 text-slate-600 lead text-[15px]">From match shirts to training gear, we help local teams take to the pitch looking the part — proudly carrying the MS Security name.</p>
+      </article>
+      <article class="card-lift reveal rounded-2xl bg-white p-7 shadow-card border border-navy-900/5">
+        <div class="w-12 h-12 rounded-xl grid place-items-center bg-teal-500/10 text-teal-500"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg></div>
+        <h3 class="mt-5 text-xl font-semibold text-navy-800">Backing young players</h3>
+        <p class="mt-2 text-slate-600 lead text-[15px]">We support up-and-coming local players — helping with the costs that can get in the way of a talented youngster's game.</p>
+      </article>
+      <article class="card-lift reveal rounded-2xl bg-white p-7 shadow-card border border-navy-900/5">
+        <div class="w-12 h-12 rounded-xl grid place-items-center bg-teal-500/10 text-teal-500"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+        <h3 class="mt-5 text-xl font-semibold text-navy-800">Rooted in the North East</h3>
+        <p class="mt-2 text-slate-600 lead text-[15px]">Everything we support is close to home — the same Tyneside, Durham and Northumberland communities we protect every day.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHO WE'VE BACKED (dated) ===== -->
+<section class="relative py-20 lg:py-28 bg-paper">
+  <div class="mx-auto max-w-4xl px-4">
+    <div class="max-w-2xl reveal">
+      <p class="text-teal-500 font-semibold tracking-wide uppercase text-sm">Proud to support</p>
+      <h2 class="mt-3 text-3xl lg:text-4xl font-bold text-navy-800 tighten">Who we've backed.</h2>
+      <p class="mt-4 text-slate-600 lead">Real clubs and real players, right here in the North East.</p>
+    </div>
+
+    <div class="mt-12 space-y-6">
+      <!-- 2026 — Whickham FC / Mason Hardy -->
+      <article class="reveal card-lift flex flex-col sm:flex-row gap-5 rounded-2xl bg-white p-5 shadow-card border border-navy-900/5">
+        <div class="shot relative w-full sm:w-44 shrink-0 overflow-hidden rounded-xl">
+          <img src="brand_assets/community/sponsor-mason-whickham.jpg" alt="Mason Hardy of Whickham FC, sponsored by MS Security" class="w-full h-full object-cover aspect-[3/4]" loading="lazy" />
+        </div>
+        <div class="flex-1">
+          <span class="inline-block rounded-full bg-teal-500/10 text-teal-600 px-3 py-1 text-xs font-semibold tracking-wide">2026</span>
+          <h3 class="mt-3 text-xl font-semibold text-navy-800">Player sponsor — Mason Hardy, Whickham FC</h3>
+          <p class="mt-2 text-slate-600 lead text-[15px]">We're proud to be Mason's player sponsor and to back the lads at Whickham FC through the season. Come on the Jacks!</p>
+          <div class="mt-4 flex flex-wrap items-center gap-3">
+            <span class="inline-block rounded-full bg-navy-900/5 text-navy-700 px-3 py-1 text-xs font-semibold">#BackTheJacks</span>
+            <a href="https://www.facebook.com/profile.php?id=100064731665108" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-teal-500 font-semibold text-sm hover:text-teal-600">Follow Whickham FC
+              <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+      <!-- 2023 — Hebburn Sparks / Josh -->
+      <article class="reveal card-lift flex flex-col sm:flex-row gap-5 rounded-2xl bg-white p-5 shadow-card border border-navy-900/5">
+        <div class="shot relative w-full sm:w-44 shrink-0 overflow-hidden rounded-xl">
+          <img src="brand_assets/community/sponsor-hebburn-sparks.jpg" alt="A young Hebburn Sparks player holding the Beacon of Light Trophy" class="w-full h-full object-cover aspect-[3/4]" loading="lazy" />
+        </div>
+        <div class="flex-1">
+          <span class="inline-block rounded-full bg-teal-500/10 text-teal-600 px-3 py-1 text-xs font-semibold tracking-wide">2023</span>
+          <h3 class="mt-3 text-xl font-semibold text-navy-800">Hebburn Sparks — Beacon of Light Trophy winners</h3>
+          <p class="mt-2 text-slate-600 lead text-[15px]">So pleased to have played a part in Hebburn Sparks' amazing season as one of their sponsors, as the lads lifted the Beacon of Light Trophy. Well done Josh!</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="mt-8 text-sm text-slate-600 reveal">Involved in a local team, player or event we should shout about? <a href="#sponsorship" class="text-teal-500 font-semibold hover:text-teal-600">Get in touch</a> — we're always adding to this list.</p>
+  </div>
+</section>
+
+<!-- ===== SPONSORSHIP CTA ===== -->
+<section id="sponsorship" class="relative py-20 lg:py-28 bg-navy-900 text-white overflow-hidden grain">
+  <div class="absolute inset-0"><div class="blob drift" style="width:480px;height:480px;left:-140px;bottom:-160px;background:radial-gradient(circle,#0CA8B4,transparent 64%)"></div></div>
+  <div class="relative mx-auto max-w-3xl px-4 text-center reveal">
+    <p class="text-cyan-300 font-semibold tracking-wide uppercase text-sm">Get involved</p>
+    <h2 class="mt-3 text-3xl lg:text-4xl font-bold tighten">Are you a local club or player looking for a sponsor?</h2>
+    <p class="mt-4 text-white/80 lead">We love hearing from grassroots teams and players across the North East. If your club could use a hand with kit or sponsorship, get in touch with Steve — we'll always try to help where we can.</p>
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+      <a href="mailto:steve@mssecurity.uk?subject=Community%20%2F%20sponsorship%20enquiry" class="btn inline-flex items-center gap-2 rounded-full bg-cyan-400 text-navy-900 px-7 py-3.5 font-semibold shadow-glow hover:bg-cyan-300">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Email a sponsorship enquiry
+      </a>
+      <a href="https://wa.me/447773822192" class="btn inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-7 py-3.5 font-semibold text-white hover:bg-white/10 backdrop-blur">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Message on WhatsApp
+      </a>
+    </div>
+    <p class="mt-6 text-sm text-white/60">Or call Steve directly on <a href="tel:+447773822192" class="text-cyan-300 font-semibold">07773 822192</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-navy-900 text-white/70">
+  <div class="mx-auto max-w-7xl px-4 py-14 grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
+    <div>
+      <div class="flex items-center gap-3">
+        <img src="brand_assets/ms_security_logo_mark.png" alt="MS Security Systems logo" class="h-14 w-auto" />
+        <span class="font-display font-bold leading-none">
+          <span class="block text-white text-xl tracking-tight">MS Security Systems</span>
+          <span class="block text-cyan-300 text-[11px] font-semibold tracking-[0.32em] mt-1.5">LTD · NORTH EAST</span>
+        </span>
+      </div>
+      <p class="mt-5 max-w-sm text-sm lead">Professional intruder alarm and CCTV installation across Newcastle, Gateshead, Sunderland, Durham and Northumberland. Genuine kit, tidy work, real aftercare.</p>
+      <div class="mt-5 flex gap-3">
+        <a href="https://www.facebook.com/MSHomeSec" target="_blank" rel="noopener" class="w-11 h-11 rounded-full border border-white/15 grid place-items-center hover:border-cyan-300 hover:text-cyan-300 transition-colors" aria-label="Facebook"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615z"/></svg></a>
+        <a href="https://wa.me/447773822192" class="w-11 h-11 rounded-full border border-white/15 grid place-items-center hover:border-cyan-300 hover:text-cyan-300 transition-colors" aria-label="WhatsApp"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></a>
+        <a href="mailto:steve@mssecurity.uk" class="w-11 h-11 rounded-full border border-white/15 grid place-items-center hover:border-cyan-300 hover:text-cyan-300 transition-colors" aria-label="Email"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold">Explore</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a href="index.html#services" class="hover:text-cyan-300">Services</a></li>
+        <li><a href="index.html#gallery" class="hover:text-cyan-300">Recent work</a></li>
+        <li><a href="index.html#reviews" class="hover:text-cyan-300">Reviews</a></li>
+        <li><a href="community.html" class="hover:text-cyan-300">Community</a></li>
+        <li><a href="index.html#quote" class="hover:text-cyan-300">Free quote</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold">Get in touch</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a href="tel:+447773822192" class="inline-flex items-center gap-2 hover:text-cyan-300"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 07773 822192</a></li>
+        <li><a href="mailto:steve@mssecurity.uk" class="inline-flex items-center gap-2 hover:text-cyan-300"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> steve@mssecurity.uk</a></li>
+        <li class="pt-2 text-white/50">Covering the North East</li>
+        <li class="text-white/50">Mon–Sat, flexible hours</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/60">
+      <p>© <span id="yr"></span> MS Security Systems Ltd · Company No. 16529092 · Registered in England &amp; Wales.</p>
+      <p>Hikvision®, Pyronix®, Ajax® and HKC® are trademarks of their respective owners. MS Security Systems Ltd is an independent installer.</p>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top" class="opacity-0 pointer-events-none fixed bottom-5 left-5 lg:left-auto lg:right-5 z-40 btn rounded-full bg-navy-600 text-white w-12 h-12 grid place-items-center shadow-glow hover:bg-navy-700 transition-opacity duration-300">
+  <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+<a href="tel:+447773822192" class="lg:hidden fixed bottom-5 right-5 z-40 btn rounded-full bg-cyan-400 text-navy-900 w-14 h-14 grid place-items-center shadow-glow" aria-label="Call us"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const burger = document.getElementById('burger'), mobile = document.getElementById('mobile');
+  burger.addEventListener('click', () => mobile.classList.toggle('hidden'));
+  mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobile.classList.add('hidden')));
+  const nav = document.getElementById('nav'), toTop = document.getElementById('toTop');
+  addEventListener('scroll', () => {
+    nav.classList.toggle('shadow-card', scrollY > 8);
+    const show = scrollY > 500;
+    toTop.classList.toggle('opacity-0', !show);
+    toTop.classList.toggle('pointer-events-none', !show);
+  }, { passive:true });
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold:0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

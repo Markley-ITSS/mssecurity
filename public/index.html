@@ -470,20 +470,20 @@ tailwind.config = {
 
     <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-4 cursor-pointer" onclick="openAlbum('all')">
       <figure class="shot relative rounded-2xl overflow-hidden shadow-card border border-navy-900/5 aspect-square group">
-        <img src="brand_assets/gallery/workspace-06-camera-ready.jpg" alt="A dome camera and coiled cabling, staged and ready to fit" class="w-full h-full object-cover" />
-        <figcaption class="absolute inset-x-0 bottom-0 p-4 text-white text-sm font-medium bg-gradient-to-t from-navy-900/85 to-transparent">Kit staged, ready to fit</figcaption>
-      </figure>
-      <figure class="shot relative rounded-2xl overflow-hidden shadow-card border border-navy-900/5 aspect-square group">
-        <img src="brand_assets/gallery/install-12-camera-brick.jpg" alt="A Hikvision camera being wired and mounted on brickwork" class="w-full h-full object-cover" />
+        <img src="brand_assets/gallery/install-17-ladder-camera-fit.jpg" alt="An installer up a ladder fitting a CCTV camera near the roofline" class="w-full h-full object-cover" />
         <figcaption class="absolute inset-x-0 bottom-0 p-4 text-white text-sm font-medium bg-gradient-to-t from-navy-900/85 to-transparent">Installs happening</figcaption>
       </figure>
       <figure class="shot relative rounded-2xl overflow-hidden shadow-card border border-navy-900/5 aspect-square group">
-        <img src="brand_assets/gallery/install-09-ceiling-run.jpg" alt="An installer running cabling neatly along a ceiling corner" class="w-full h-full object-cover" />
-        <figcaption class="absolute inset-x-0 bottom-0 p-4 text-white text-sm font-medium bg-gradient-to-t from-navy-900/85 to-transparent">Tidy first fix</figcaption>
+        <img src="brand_assets/gallery/workspace-09-live-feed-tv.jpg" alt="A live CCTV feed shown on a TV, covering the garden and street" class="w-full h-full object-cover" />
+        <figcaption class="absolute inset-x-0 bottom-0 p-4 text-white text-sm font-medium bg-gradient-to-t from-navy-900/85 to-transparent">Footage, clear as day</figcaption>
       </figure>
       <figure class="shot relative rounded-2xl overflow-hidden shadow-card border border-navy-900/5 aspect-square group">
-        <img src="brand_assets/gallery/panel-04-ms-security-branded.jpg" alt="An old alarm system replaced with a modern MS Security branded panel" class="w-full h-full object-cover" />
-        <figcaption class="absolute inset-x-0 bottom-0 p-4 text-white text-sm font-medium bg-gradient-to-t from-navy-900/85 to-transparent">Old system, new panel</figcaption>
+        <img src="brand_assets/gallery/panel-10-ms-home-security-keypad.jpg" alt="An MS Home Security branded alarm keypad, lit up and ready to use" class="w-full h-full object-cover" />
+        <figcaption class="absolute inset-x-0 bottom-0 p-4 text-white text-sm font-medium bg-gradient-to-t from-navy-900/85 to-transparent">New system, MS branded</figcaption>
+      </figure>
+      <figure class="shot relative rounded-2xl overflow-hidden shadow-card border border-navy-900/5 aspect-square group">
+        <img src="brand_assets/gallery/panel-09-old-system-removed.jpg" alt="An old alarm panel, keypad and siren, removed and dismantled" class="w-full h-full object-cover" />
+        <figcaption class="absolute inset-x-0 bottom-0 p-4 text-white text-sm font-medium bg-gradient-to-t from-navy-900/85 to-transparent">Old system, stripped out</figcaption>
       </figure>
     </div>
     <p class="mt-5 text-xs text-slate-600">Real photos from recent MS Security installs. Tap any image to browse the full gallery, or see more on our <a href="https://www.facebook.com/MSHomeSec" target="_blank" rel="noopener" class="underline hover:text-teal-500">Facebook page</a>.</p>
@@ -508,106 +508,54 @@ tailwind.config = {
       <button class="album-tab" data-tab="installs" onclick="setTab('installs')">Installs in progress</button>
       <button class="album-tab" data-tab="workspace" onclick="setTab('workspace')">Tidy workspace</button>
       <button class="album-tab" data-tab="panels" onclick="setTab('panels')">Old &amp; new panels</button>
-      <button class="album-tab" data-tab="reviews" onclick="setTab('reviews')">Reviews</button>
-      <button class="album-tab" data-tab="events" onclick="setTab('events')">Events</button>
     </div>
     <div id="album-grid" class="p-5 sm:p-7 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 overflow-y-auto">
       <!-- INSTALLS IN PROGRESS -->
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-12-camera-brick.jpg" data-caption="Wiring and mounting a Hikvision camera on brickwork" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/install-12-camera-brick.jpg" alt="A Hikvision camera being wired and mounted on brickwork, ladder in the background" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Wiring a camera on site</span>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-17-ladder-camera-fit.jpg" data-caption="Fitting a CCTV camera near the roofline, up a ladder" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/install-17-ladder-camera-fit.jpg" alt="An installer up a ladder fitting a CCTV camera near the roofline of a house" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Fitting a camera on site</span>
       </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-13-camera-finished.jpg" data-caption="A finished camera install, weatherproofed under the eaves" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/install-13-camera-finished.jpg" alt="A camera mounted and weatherproofed under the roofline" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-16-camera-eaves.jpg" data-caption="A finished camera install, mounted under the eaves" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/install-16-camera-eaves.jpg" alt="A dome camera mounted under the eaves of a brick house" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
         <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Finished &amp; weatherproofed</span>
       </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-09-ceiling-run.jpg" data-caption="Running cabling neatly along a ceiling corner" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/install-09-ceiling-run.jpg" alt="An installer running cabling neatly along a ceiling corner" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Cabling run in progress</span>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-18-drilling-cable-route.jpg" data-caption="Drilling to route a hidden cable during a CCTV install" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/install-18-drilling-cable-route.jpg" alt="An installer up a ladder drilling into brickwork to route a hidden CCTV cable" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Cabling kept out of sight</span>
       </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-08-trunking-corner.jpg" data-caption="Fitting trunking neatly around a room corner" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/install-08-trunking-corner.jpg" alt="An installer fitting trunking around a room corner from a ladder" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Neat trunking, first fix</span>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-19-external-siren.jpg" data-caption="An external siren fitted to brickwork" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/install-19-external-siren.jpg" alt="An external alarm bell box and siren fitted to a brick wall" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">External siren fitted</span>
       </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-10-wall-fixing.jpg" data-caption="Fixing cable runs to a wall corner from a ladder" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/install-10-wall-fixing.jpg" alt="An installer up a ladder fixing cabling to a wall corner" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Working through first fix</span>
-      </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-11-drilling-soffit.jpg" data-caption="Drilling into a soffit to route an external camera cable" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/install-11-drilling-soffit.jpg" alt="An installer drilling into a soffit outdoors to route a camera cable" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Routing an outdoor cable</span>
-      </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-14-cable-prep.jpg" data-caption="Preparing a camera cable for connection" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/install-14-cable-prep.jpg" alt="A close-up of an installer stripping and preparing a camera cable" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Getting the details right</span>
-      </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-15-cable-run.jpg" data-caption="A cable run laid out neatly along a garden path during install" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/install-15-cable-run.jpg" alt="A cable run laid out along a garden path during an install" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Cable run to the camera</span>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="installs" data-full="brand_assets/gallery/install-20-pir-sensor.jpg" data-caption="A wireless PIR motion sensor being fitted in a room corner" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/install-20-pir-sensor.jpg" alt="A wireless PIR sensor open on a wall, showing the circuit board and battery, being fitted in a room corner" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Motion sensor being fitted</span>
       </button>
       <!-- TIDY WORKSPACE -->
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="workspace" data-full="brand_assets/gallery/workspace-06-camera-ready.jpg" data-caption="A dome camera and coiled cabling staged and ready to fit" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/workspace-06-camera-ready.jpg" alt="A dome camera and coiled cabling staged neatly, ready to fit" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Kit staged, ready to fit</span>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="workspace" data-full="brand_assets/gallery/workspace-09-live-feed-tv.jpg" data-caption="A live CCTV feed shown on a TV, covering the garden and street" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/workspace-09-live-feed-tv.jpg" alt="A television showing a live CCTV feed of a front garden and street, with two cars visible" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Clear footage, day or night</span>
       </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="workspace" data-full="brand_assets/gallery/workspace-02-desk-monitor.jpg" data-caption="A recorder and monitor set up and tested before final fitting" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/workspace-02-desk-monitor.jpg" alt="An HVR recorder and monitor set up on a desk, showing a live camera feed" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Recorder set up &amp; tested</span>
-      </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="workspace" data-full="brand_assets/gallery/workspace-04-staging-desk.jpg" data-caption="Equipment staged neatly on a desk ahead of installation" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/workspace-04-staging-desk.jpg" alt="Equipment boxes and a recorder staged neatly on a desk" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Everything staged &amp; ready</span>
-      </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="workspace" data-full="brand_assets/gallery/workspace-05-parts-laid-out.jpg" data-caption="Cable, connectors and tools laid out and organised" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/workspace-05-parts-laid-out.jpg" alt="Cable reels, screwdrivers and connectors laid out neatly on a windowsill" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Parts kept organised</span>
-      </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="workspace" data-full="brand_assets/gallery/workspace-03-toolboxes-tv.jpg" data-caption="Tools kept tidy and organised on site" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/workspace-03-toolboxes-tv.jpg" alt="Toolboxes and fixings kept tidy and organised on site" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Tools kept tidy on site</span>
-      </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="workspace" data-full="brand_assets/gallery/workspace-07-site-fitout.jpg" data-caption="A room mid fit-out, kept clean and organised throughout" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/workspace-07-site-fitout.jpg" alt="A room mid fit-out with equipment neatly organised, not left in a mess" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Never left in a mess</span>
-      </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="workspace" data-full="brand_assets/gallery/workspace-01-psu-box.jpg" data-caption="A power supply neatly housed and tidily wired" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/workspace-01-psu-box.jpg" alt="A power supply unit neatly housed in its case with tidy wiring" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Neat, tidy wiring</span>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="workspace" data-full="brand_assets/gallery/workspace-08-nvr-diagnostics.jpg" data-caption="Checking camera status and settings on the recorder" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/workspace-08-nvr-diagnostics.jpg" alt="A recorder screen showing the camera device list and connection status during setup" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Checked &amp; configured on site</span>
       </button>
       <!-- OLD & NEW PANELS -->
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="panels" data-full="brand_assets/gallery/panel-04-ms-security-branded.jpg" data-caption="An MS Security branded panel — a finished, professional replacement" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/panel-04-ms-security-branded.jpg" alt="A finished alarm panel with an MS Security branded sticker and contact number" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="panels" data-full="brand_assets/gallery/panel-10-ms-home-security-keypad.jpg" data-caption="An MS Home Security branded keypad, lit up and ready to use" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/panel-10-ms-home-security-keypad.jpg" alt="An illuminated MS Home Security branded alarm keypad with keyfobs and instructions alongside" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
         <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">New system, MS branded</span>
       </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="panels" data-full="brand_assets/gallery/panel-05-ms-security-clean.jpg" data-caption="A modern MS Security branded alarm panel, cleanly installed" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/panel-05-ms-security-clean.jpg" alt="A modern MS Security branded alarm panel, cleanly installed" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Modern panel, clean finish</span>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="panels" data-full="brand_assets/gallery/panel-08-ms-security-display.jpg" data-caption="An MS Security branded keypad display, close up" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/panel-08-ms-security-display.jpg" alt="A close-up of an MS Security branded alarm keypad display showing the time" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">MS branded, finished install</span>
       </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="panels" data-full="brand_assets/gallery/panel-06-ms-security-onsite.jpg" data-caption="An MS Security branded panel upgrade fitted on site" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/panel-06-ms-security-onsite.jpg" alt="An MS Security branded alarm panel fitted on site during an upgrade" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Upgrade fitted on site</span>
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="panels" data-full="brand_assets/gallery/panel-07-new-keypad-protected.jpg" data-caption="A new alarm keypad, still in its protective film, alongside the receiver and thermostat" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/panel-07-new-keypad-protected.jpg" alt="A newly fitted alarm keypad still wrapped in protective film, with a wireless receiver and thermostat below it" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Freshly fitted keypad</span>
       </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="panels" data-full="brand_assets/gallery/panel-02-texecom-veritas-excel.jpg" data-caption="A Texecom Veritas panel being checked and configured" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/panel-02-texecom-veritas-excel.jpg" alt="A Texecom Veritas Excel alarm panel being checked and configured" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Checked &amp; configured</span>
-      </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="panels" data-full="brand_assets/gallery/panel-03-wireless-keypad.jpg" data-caption="An older wireless keypad, the kind of system we take over and upgrade" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/panel-03-wireless-keypad.jpg" alt="An older wireless alarm keypad, the kind of system we take over and upgrade" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">Older system, taken over</span>
-      </button>
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="panels" data-full="brand_assets/gallery/panel-01-veritas-basic.jpg" data-caption="A basic, unbranded keypad — the kind of tired setup we replace" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/panel-01-veritas-basic.jpg" alt="A basic, unbranded alarm keypad — the kind of tired setup we replace" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="panels" data-full="brand_assets/gallery/panel-09-old-system-removed.jpg" data-caption="An old alarm panel, keypad and siren, removed and dismantled" onclick="openLightbox(this)">
+        <img src="brand_assets/gallery/panel-09-old-system-removed.jpg" alt="An old alarm control panel, keypad and siren removed and laid out on the ground" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
         <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">The old, tired setup</span>
-      </button>
-      <!-- REVIEWS -->
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="reviews" data-full="brand_assets/gallery/review-01-facebook-review.jpg" data-caption="A five-star Facebook recommendation for MS Security" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/review-01-facebook-review.jpg" alt="A screenshot of a Facebook review recommending MS Security CCTV & Alarms" class="w-full aspect-square object-cover object-top transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">"Highly recommend...top class"</span>
-      </button>
-      <!-- EVENTS -->
-      <button class="album-item group relative rounded-xl overflow-hidden aspect-square shadow-card border border-navy-900/5" data-cat="events" data-full="brand_assets/gallery/event-01-security-event-birmingham.jpg" data-caption="Steve at The Security Event, NEC Birmingham" onclick="openLightbox(this)">
-        <img src="brand_assets/gallery/event-01-security-event-birmingham.jpg" alt="Steve Brown of MS Security at The Security Event trade show in Birmingham" class="w-full aspect-square object-cover object-top transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-        <span class="absolute inset-x-0 bottom-0 p-2.5 text-white text-[11px] font-medium text-left leading-tight bg-gradient-to-t from-navy-900/85 to-transparent">The Security Event, NEC</span>
       </button>
     </div>
     <p class="px-5 sm:px-7 py-2.5 text-[11px] text-slate-600 border-t border-navy-900/10 bg-white">All photos are from real MS Security jobs across the North East.</p>

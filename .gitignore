@@ -4,3 +4,7 @@
 # Large/raw working files, not needed in repo history
 scripts/.cache/
 temporary screenshots/
+
+# Python bytecode
+__pycache__/
+*.pyc

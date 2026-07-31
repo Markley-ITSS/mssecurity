@@ -1,19 +1,26 @@
-# Build changelog — MS Security Systems demo site
+# Build changelog — MS Security Systems site
 
-Live: https://mshomesec-demo.netlify.app · Netlify site `mshomesec-demo`.
-No git repo — rollback is via the timestamped copies in **`backups/`** (copy one back over `index.html`, then redeploy).
+Repo: **github.com/Markley-ITSS/mssecurity** (public, org-owned, branch `master`).
+Hosting has been handed to the client: the live site is served from **the client's own
+Netlify account**, deploying automatically from `master`. Markley IT no longer holds a
+Netlify site for this project (deleted 2026-07-31) — the CLI `netlify deploy` flow below
+is retired.
 
-**Deploy command:** copy the changed files into the clean publish dir and run
-`netlify deploy --prod --dir <publish> --site 3d0d4574-0303-40cf-a92b-1d1f53c85df4`
+**Deploy = `git push` to `master`.** Nothing goes live until pushed; the client's Netlify
+build follows a minute or two later. Rollback is via git (`git revert`), not `backups/`.
 
 ---
 
+## 2026-07-31 — Hosting handed over to the client
+- **Client now hosts the site.** Steve registered the domain and pointed it at **his own Netlify account**, which builds from this repo's `master` branch. Netlify Forms submissions (the quote form) now land in his account, not Markley IT's.
+- **Markley IT's duplicate Netlify site deleted** — it was a second site deploying from the same repo and served no purpose once the domain and forms moved. No data lost; the repo is the source of truth.
+- **Repo deliberately retained** in the Markley-ITSS org (public, Paul is owner). Not transferred to the client's GitHub — code changes still route through Markley IT. If a full handover is wanted later it's a single GitHub repo transfer plus a Netlify reconnect on his side.
+- Background: the reason the repo sits in a public org repo rather than the client's own account is Netlify's free plan, which won't deploy a **private org-owned** repo, and won't show a personal repo you're only a collaborator on. Public + org membership was the no-cost route.
+
 ## Open items for next session
 
-- **GitHub repo + cloud automation** (queued overnight 2026-07-22, Paul's explicit ask for the morning): create a GitHub repo for this project, wire a cloud routine to run `scripts/update_crime_stats.py --apply --refresh-download` on it, and decide whether to connect Netlify to auto-deploy on push (currently manual `netlify deploy` only). Needs Paul awake to confirm: repo name/visibility/account, routine schedule (default proposal: same quarterly Jan/Apr/Jul/Oct cadence as the local task below), and whether auto-deploy is wanted. See [[crime-stats-automation]] memory.
-- A **Windows Task Scheduler job** (`MSSecurityDemo-CrimeStatsRefresh`, local machine only, runs while the PC is on) is the interim automation until the above is built — see that memory file for exact config.
+- **Crime-stats refresh** — the GitHub Actions workflow exists but its schedule is disabled (commit 4db206f); manual trigger only. Decide whether to re-enable the quarterly cadence now that the site is client-hosted. A **Windows Task Scheduler job** (`MSSecurityDemo-CrimeStatsRefresh`, Paul's machine only) remains the interim fallback.
 - Google star rating/count still needed for a Google stat badge (Steve).
-- Domain `mssecurity.uk` not yet pointed at Netlify.
 - ICO registration/fee status + exact data-retention periods need Steve's confirmation on the Privacy Policy page.
 
 ## 2026-07-22 — Gallery overhaul (real install photos) + crime-stats automation

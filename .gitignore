@@ -8,3 +8,8 @@ temporary screenshots/
 # Python bytecode
 __pycache__/
 *.pyc
+
+# Never commit real environment files (.env.example is the template and stays tracked).
+.env
+.env.*
+!.env.example
